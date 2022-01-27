@@ -635,10 +635,10 @@ a:hover {
         LAYOUT
 ----------------------------------------------*/
 body {
-    background: rgb(24, 32, 42);
+    background: #254988;
     height: 100%;
     font-size: 14px;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: "Ubuntu";
     line-height: 1;
     margin: 0;
     overflow: hidden;
@@ -665,7 +665,7 @@ main {
 #canvasArea #graph {
     box-sizing: border-box;
     margin: 0 0 2px 0;
-    background-color: #ecf0f1;
+    background-color: #f2f2f2;
     overflow: hidden;
     padding: 0;
     width: 100%;
@@ -939,7 +939,7 @@ main {
     top: 0;
     right: 0;
     bottom: 0;
-    color: #bdc3c7;
+    color: #f2f2f2;
     height: 100%;
     width: 22%;
     overflow-y: auto;
@@ -960,6 +960,7 @@ main {
 }
 
 #generalDetails {
+    background-image: url("https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_bluedots.png");
     width: auto;
     box-sizing: border-box;
     height: 100%;
@@ -1051,7 +1052,7 @@ main {
 }
 
 .accordion-trigger {
-    background: #24323e;
+    background-image: url("https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_dots.png");;
     cursor: pointer;
     padding: .5em;
 }
