@@ -1,0 +1,1136 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/ofo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "Occupant Feedback Ontology"
+    },
+    "iri" : "https://w3id.org/ofo",
+    "version" : "1.0",
+    "author" : [ "https://orcid.org/0000-0002-8809-3277" ],
+    "description" : {
+      "en" : "The aim of the Occupant Feedback Ontology is to semantically describe passive and active occupant feedback and to enable integration of this feedback with linked building data."
+    },
+    "labels" : {
+      "en" : "Occupant Feedback Ontology"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-8809-3277",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ofo",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Occupant Feedback Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "15",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ofo#Feedback",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feedback",
+      "en" : "Feedback"
+    },
+    "comment" : {
+      "en" : "An act of producing a statement of opinion on the state of a property."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/ofo#Property",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property",
+      "en" : "Property"
+    },
+    "comment" : {
+      "en" : "A measurable and intrinsic characteristic of a feature of interest."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/ofo#Wearable",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wearable",
+      "en" : "Wearable"
+    },
+    "subClasses" : [ "39" ],
+    "comment" : {
+      "en" : "A smart electronic device that is worn close to or on the surface of a person’s skin. It can implement procedures to perform observations and actuations."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/ofo#Smartwatch",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Smartwatch",
+      "en" : "Smartwatch"
+    },
+    "comment" : {
+      "en" : "A wearable computer in the form of a watch. It can implement procedures to perform observations and actuations."
+    },
+    "id" : "39",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/ofo#FeatureOfInterest",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "An object, part, zone, event etc.\nIn the context of the OFO ontology, an ofo:Person will usually also be an ofo:FeatureOfInterest.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "Feature of interest"
+    },
+    "comment" : {
+      "en" : "An abstraction of a real-world phenomenon which could be described in terms of its properties."
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/ofo#Person",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "comment" : {
+      "en" : "A member of the human race."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/ofo#Result",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The result may hold, for example, a value, a unit, a result time and other provenance data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Result",
+      "en" : "Result"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "The outcome of an execution."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "54",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "15",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/ofo#Database",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Database",
+      "en" : "Database"
+    },
+    "comment" : {
+      "en" : "A collection of data.\n\nThe database class is used to describe an external database, storing results of executions, such as a time-series database."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/ofo#DataPoint",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The data point can be used in various types of databases. It corresponds to single data records in time-series databases, or rows in SQL database tables. It is also a common concept in BMS servers, representing for example a sensor reading, output value of an actuator or any other scalar value.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataPoint",
+      "en" : "Data point"
+    },
+    "comment" : {
+      "en" : "A data element in a database representing the state of a property."
+    },
+    "id" : "4",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/ofo#Location",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "comment" : {
+      "en" : "The area or space something is in.\n\nThe ofo:Location class could be used to describe both geographical locations (such as points) and topological locations (such as rooms)."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/ofo#PropertySet",
+    "baseIri" : "https://w3id.org/ofo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertySet",
+      "en" : "Property set"
+    },
+    "comment" : {
+      "en" : "A collection of properties. The collection could also be a singleton or a null set."
+    },
+    "id" : "7"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ofo#isExternalDatabaseOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "2",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExternalDatabaseOf",
+      "en" : "is external database of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Linking a database with the wearable which results are stored in this database."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasDataPoint",
+    "inverse" : "5",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDataPoint",
+      "en" : "has data point"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relationship between a database and its data points."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/ofo#containsProperty",
+    "inverse" : "9",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "containsProperty",
+      "en" : "contains property"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relationship between a property set and a property which is part of this set."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/ofo#isWornBy",
+    "inverse" : "13",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isWornBy",
+      "en" : "is worn by"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Describing the relation between a wearable and the person wearing this wearable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasLocation",
+    "inverse" : "17",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "16",
+    "annotations" : {
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Person",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "en" : "has location"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Relationship between an entity, such as a person or a wearable, and a location."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasFeedback",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasFeedback",
+      "en" : "has feedback"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Relationship between a property and feedback evaluating this property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasComplexProperty",
+    "inverse" : "23",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasComplexProperty",
+      "en" : "has complex property"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "Direct relationship between a feature of interest and a result."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasExternalDatabase",
+    "inverse" : "0",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "1",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasExternalDatabase",
+      "en" : "has external database"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Linking a wearable with the database its results are stored in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasID",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasID",
+      "en" : "has ID"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "The ID of a data point in an external database."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasFeedbackState",
+    "inverse" : "29",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasFeedbackState",
+      "en" : "has feedback state"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "Linking feedback to its result."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/ofo#isDataPointOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isDataPointOf",
+      "en" : "is data point of"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Linking a data point with the database it is part of."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasEvaluatedProperty",
+    "inverse" : "18",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasEvaluatedProperty",
+      "en" : "has evaluated property"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Relationship between feedback and the property it evaluates."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasProperty",
+    "inverse" : "32",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasProperty",
+      "en" : "has property"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Linking a feature of interest with its property. The property is intrinsic to this feature of interest, and cannot exist without this feature of interest."
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/ofo#isFeatureOfInterestOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isFeatureOfInterestOf",
+      "en" : "is feature of interest of"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Linking a feature of interest with feedback that evaluates a property of this feature of interest."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ofo#monitorsFeedback",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "19",
+    "annotations" : {
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "monitorsFeedback",
+      "en" : "monitors feedback"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Relationship between an executor (e.g. a wearable) and the feedback it monitors."
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/ofo#isResultOf",
+    "inverse" : "24",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isResultOf",
+      "en" : "is result of"
+    },
+    "domain" : "22",
+    "subproperty" : [ "23", "38", "29" ],
+    "comment" : {
+      "en" : "A superproperty of multiple object properties with an ofo:Result as rdfs:Domain. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasSimplePropertyState",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasSimplePropertyState",
+      "en" : "has simple property state"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Linking a property with a simple property state value described as a literal."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/ofo#executesOn",
+    "inverse" : "44",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "annotations" : {
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "executesOn",
+      "en" : "executes on"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "Relationship between a wearable and the property it executes on."
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "range" : "22",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasFeatureOfInterest",
+    "inverse" : "33",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasFeatureOfInterest",
+      "en" : "has feature of interest"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Linking feedback with its feature of interest."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/ofo#isPartOfPropertySet",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isPartOfPropertySet",
+      "en" : "is part of property set"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Relationship between a property and the property set it is part of."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/ofo#isPropertyStateOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isPropertyStateOf",
+      "en" : "is property state of"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "22",
+    "comment" : {
+      "en" : "Linking a result with a property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "11",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/ofo#isFeedbackOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isFeedbackOf",
+      "en" : "is feedback of"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Relationship between feedback and the person that gave this feedback."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasPropertyState",
+    "inverse" : "38",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasPropertyState",
+      "en" : "has property state"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "Linking a property with a result."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasSimpleProperty",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasSimpleProperty",
+      "en" : "has simple property"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Linking a feature of interest with a simple property value described as a literal."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/ofo#givesFeedback",
+    "inverse" : "48",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "givesFeedback",
+      "en" : "gives feedback"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Relationship between a person and the feedback given by this person."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/ofo#isMonitoredBy",
+    "inverse" : "34",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "35",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMonitoredBy",
+      "en" : "is monitored by"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Relationship between feedback and the executor (e.g. a wearable) that monitored this feedback."
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/ofo#wears",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "wears",
+      "en" : "wears"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Relationship between a wearable and the person that wears this wearable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasValue",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "en" : "has value"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "The simple value of a result."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/ofo#isPropertyOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isPropertyOf",
+      "en" : "is property of"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Linking a property with its feature of interest. The property is intrinsic to this feature of interest, and cannot exist without a feature of interest."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasSimpleResult",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasSimpleResult",
+      "en" : "has simple result"
+    },
+    "domain" : "54",
+    "comment" : {
+      "en" : "A superproperty of multiple datatype properties that describe simple result values. This superproperty can be used to simultaneously query multiple ways of describing simple property values and increases the freedom of the data modeler."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/ofo#isExecutedBy",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "43",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isExecutedBy",
+      "en" : "is executed by"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Relationship between a property and the wearable which acts on the property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/ofo#isComplexPropertyOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isComplexPropertyOf",
+      "en" : "is complex property of"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "22",
+    "comment" : {
+      "en" : "Linking a result with a feature of interest."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasSubProperty",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasSubProperty",
+      "en" : "has sub-property"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Describing a whole-part relationship between a property and its sub-property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/ofo#isFeedbackStateOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isFeedbackStateOf",
+      "en" : "is feedback state of"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "22",
+    "comment" : {
+      "en" : "Linking a result with feedback."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/ofo#isSubPropertyOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "8",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The object property describes a typical whole-part relationship between a property and its sub-properties. It is used in cases where properties are so complex that it is desirable to decompose them into separate properties. The separate properties might also be individually linked to their own results.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSubPropertyOf",
+      "en" : "is sub-property of"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Relation between a sub-property and its parent property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/ofo#ofo:hasResult",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "ofo:hasResult",
+      "en" : "has result"
+    },
+    "domain" : "37",
+    "subproperty" : [ "20", "50", "28" ],
+    "comment" : {
+      "en" : "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/ofo#isLocationOf",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "15",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Person",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ofo#Wearable",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLocationOf",
+      "en" : "is location of"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Relationship between a location and an entity, such as a person or a wearable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/ofo#hasSimpleFeedbackState",
+    "baseIri" : "https://w3id.org/ofo",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasSimpleFeedbackState",
+      "en" : "has simple feedback state"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Linking feedback with a simple result value described as a literal."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  } ]
+}

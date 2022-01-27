@@ -1,0 +1,1668 @@
+<h2 id="crossreference" class="list">Cross reference for Occupant Feedback Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Occupant Feedback Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#DataPoint" title="https://w3id.org/ofo#DataPoint">Data point</a>
+      </li>
+      <li>
+         <a href="#Database" title="https://w3id.org/ofo#Database">Database</a>
+      </li>
+      <li>
+         <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+      </li>
+      <li>
+         <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+      </li>
+      <li>
+         <a href="#Location" title="https://w3id.org/ofo#Location">Location</a>
+      </li>
+      <li>
+         <a href="#Person" title="https://w3id.org/ofo#Person">Person</a>
+      </li>
+      <li>
+         <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+      </li>
+      <li>
+         <a href="#PropertySet" title="https://w3id.org/ofo#PropertySet">Property set</a>
+      </li>
+      <li>
+         <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+      </li>
+      <li>
+         <a href="#Smartwatch" title="https://w3id.org/ofo#Smartwatch">Smartwatch</a>
+      </li>
+      <li>
+         <a href="#Wearable" title="https://w3id.org/ofo#Wearable">Wearable</a>
+      </li>
+   </ul>
+   <div class="entity" id="DataPoint">
+      <h3>Data point<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#DataPoint</p>
+      <div class="comment">
+         <span class="markdown">A data element in a database representing the state of a property.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The data point can be used in various types of databases. It corresponds to single data records in time-series databases, or rows in SQL database tables. It is also a common concept in BMS servers, representing for example a sensor reading, output value of an actuator or any other scalar value.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasID" title="https://w3id.org/ofo#hasID">has ID</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isDataPointOf" title="https://w3id.org/ofo#isDataPointOf">is data point of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDataPoint" title="https://w3id.org/ofo#hasDataPoint">has data point</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Database">
+      <h3>Database<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Database</p>
+      <div class="comment">
+         <span class="markdown">A collection of data.
+
+The database class is used to describe an external database, storing results of executions, such as a time-series database.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDataPoint" title="https://w3id.org/ofo#hasDataPoint">has data point</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isExternalDatabaseOf" title="https://w3id.org/ofo#isExternalDatabaseOf">is external database of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasExternalDatabase" title="https://w3id.org/ofo#hasExternalDatabase">has external database</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isDataPointOf" title="https://w3id.org/ofo#isDataPointOf">is data point of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FeatureOfInterest">
+      <h3>Feature of interest<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#FeatureOfInterest</p>
+      <div class="comment">
+         <span class="markdown">An abstraction of a real-world phenomenon which could be described in terms of its properties.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>An object, part, zone, event etc.
+In the context of the OFO ontology, an ofo:Person will usually also be an ofo:FeatureOfInterest.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasComplexProperty" title="https://w3id.org/ofo#hasComplexProperty">has complex property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasProperty" title="https://w3id.org/ofo#hasProperty">has property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSimpleProperty" title="https://w3id.org/ofo#hasSimpleProperty">has simple property</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isFeatureOfInterestOf" title="https://w3id.org/ofo#isFeatureOfInterestOf">is feature of interest of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFeatureOfInterest" title="https://w3id.org/ofo#hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isComplexPropertyOf" title="https://w3id.org/ofo#isComplexPropertyOf">is complex property of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyOf" title="https://w3id.org/ofo#isPropertyOf">is property of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Feedback">
+      <h3>Feedback<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Feedback</p>
+      <div class="comment">
+         <span class="markdown">An act of producing a statement of opinion on the state of a property.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEvaluatedProperty" title="https://w3id.org/ofo#hasEvaluatedProperty">has evaluated property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFeatureOfInterest" title="https://w3id.org/ofo#hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFeedbackState" title="https://w3id.org/ofo#hasFeedbackState">has feedback state</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSimpleFeedbackState" title="https://w3id.org/ofo#hasSimpleFeedbackState">has simple feedback state</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isFeedbackOf" title="https://w3id.org/ofo#isFeedbackOf">is feedback of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isMonitoredBy" title="https://w3id.org/ofo#isMonitoredBy">is monitored by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#givesFeedback" title="https://w3id.org/ofo#givesFeedback">gives feedback</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFeedback" title="https://w3id.org/ofo#hasFeedback">has feedback</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isFeatureOfInterestOf" title="https://w3id.org/ofo#isFeatureOfInterestOf">is feature of interest of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isFeedbackStateOf" title="https://w3id.org/ofo#isFeedbackStateOf">is feedback state of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#monitorsFeedback" title="https://w3id.org/ofo#monitorsFeedback">monitors feedback</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Location">
+      <h3>Location<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Location</p>
+      <div class="comment">
+         <span class="markdown">The area or space something is in.
+
+The ofo:Location class could be used to describe both geographical locations (such as points) and topological locations (such as rooms).</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isLocationOf" title="https://w3id.org/ofo#isLocationOf">is location of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLocation" title="https://w3id.org/ofo#hasLocation">has location</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Person">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Person</p>
+      <div class="comment">
+         <span class="markdown">A member of the human race.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#givesFeedback" title="https://w3id.org/ofo#givesFeedback">gives feedback</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wears" title="https://w3id.org/ofo#wears">wears</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isFeedbackOf" title="https://w3id.org/ofo#isFeedbackOf">is feedback of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isWornBy" title="https://w3id.org/ofo#isWornBy">is worn by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Property">
+      <h3>Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Property</p>
+      <div class="comment">
+         <span class="markdown">A measurable and intrinsic characteristic of a feature of interest.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasFeedback" title="https://w3id.org/ofo#hasFeedback">has feedback</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyState" title="https://w3id.org/ofo#hasPropertyState">has property state</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSimplePropertyState" title="https://w3id.org/ofo#hasSimplePropertyState">has simple property state</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSubProperty" title="https://w3id.org/ofo#hasSubProperty">has sub-property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isExecutedBy" title="https://w3id.org/ofo#isExecutedBy">is executed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPartOfPropertySet" title="https://w3id.org/ofo#isPartOfPropertySet">is part of property set</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyOf" title="https://w3id.org/ofo#isPropertyOf">is property of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSubPropertyOf" title="https://w3id.org/ofo#isSubPropertyOf">is sub-property of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#containsProperty" title="https://w3id.org/ofo#containsProperty">contains property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#executesOn" title="https://w3id.org/ofo#executesOn">executes on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEvaluatedProperty" title="https://w3id.org/ofo#hasEvaluatedProperty">has evaluated property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasProperty" title="https://w3id.org/ofo#hasProperty">has property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubProperty" title="https://w3id.org/ofo#hasSubProperty">has sub-property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyStateOf" title="https://w3id.org/ofo#isPropertyStateOf">is property state of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSubPropertyOf" title="https://w3id.org/ofo#isSubPropertyOf">is sub-property of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PropertySet">
+      <h3>Property set<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#PropertySet</p>
+      <div class="comment">
+         <span class="markdown">A collection of properties. The collection could also be a singleton or a null set.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#containsProperty" title="https://w3id.org/ofo#containsProperty">contains property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPartOfPropertySet" title="https://w3id.org/ofo#isPartOfPropertySet">is part of property set</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Result">
+      <h3>Result<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Result</p>
+      <div class="comment">
+         <span class="markdown">The outcome of an execution.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The result may hold, for example, a value, a unit, a result time and other provenance data.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DataPoint" title="https://w3id.org/ofo#DataPoint">Data point</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasValue" title="https://w3id.org/ofo#hasValue">has value</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isComplexPropertyOf" title="https://w3id.org/ofo#isComplexPropertyOf">is complex property of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isFeedbackStateOf" title="https://w3id.org/ofo#isFeedbackStateOf">is feedback state of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyStateOf" title="https://w3id.org/ofo#isPropertyStateOf">is property state of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isResultOf" title="https://w3id.org/ofo#isResultOf">is result of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasComplexProperty" title="https://w3id.org/ofo#hasComplexProperty">has complex property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFeedbackState" title="https://w3id.org/ofo#hasFeedbackState">has feedback state</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyState" title="https://w3id.org/ofo#hasPropertyState">has property state</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ofo:hasResult" title="https://w3id.org/ofo#ofo:hasResult">has result</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Smartwatch">
+      <h3>Smartwatch<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Smartwatch</p>
+      <div class="comment">
+         <span class="markdown">A wearable computer in the form of a watch. It can implement procedures to perform observations and actuations.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Wearable" title="https://w3id.org/ofo#Wearable">Wearable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Wearable">
+      <h3>Wearable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#Wearable</p>
+      <div class="comment">
+         <span class="markdown">A smart electronic device that is worn close to or on the surface of a person’s skin. It can implement procedures to perform observations and actuations.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Smartwatch" title="https://w3id.org/ofo#Smartwatch">Smartwatch</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isWornBy" title="https://w3id.org/ofo#isWornBy">is worn by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wears" title="https://w3id.org/ofo#wears">wears</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#containsProperty" title="https://w3id.org/ofo#containsProperty">contains property</a>
+      </li>
+      <li>
+         <a href="#executesOn" title="https://w3id.org/ofo#executesOn">executes on</a>
+      </li>
+      <li>
+         <a href="#givesFeedback" title="https://w3id.org/ofo#givesFeedback">gives feedback</a>
+      </li>
+      <li>
+         <a href="#hasComplexProperty" title="https://w3id.org/ofo#hasComplexProperty">has complex property</a>
+      </li>
+      <li>
+         <a href="#hasDataPoint" title="https://w3id.org/ofo#hasDataPoint">has data point</a>
+      </li>
+      <li>
+         <a href="#hasEvaluatedProperty" title="https://w3id.org/ofo#hasEvaluatedProperty">has evaluated property</a>
+      </li>
+      <li>
+         <a href="#hasExternalDatabase" title="https://w3id.org/ofo#hasExternalDatabase">has external database</a>
+      </li>
+      <li>
+         <a href="#hasFeatureOfInterest" title="https://w3id.org/ofo#hasFeatureOfInterest">has feature of interest</a>
+      </li>
+      <li>
+         <a href="#hasFeedback" title="https://w3id.org/ofo#hasFeedback">has feedback</a>
+      </li>
+      <li>
+         <a href="#hasFeedbackState" title="https://w3id.org/ofo#hasFeedbackState">has feedback state</a>
+      </li>
+      <li>
+         <a href="#hasLocation" title="https://w3id.org/ofo#hasLocation">has location</a>
+      </li>
+      <li>
+         <a href="#hasProperty" title="https://w3id.org/ofo#hasProperty">has property</a>
+      </li>
+      <li>
+         <a href="#hasPropertyState" title="https://w3id.org/ofo#hasPropertyState">has property state</a>
+      </li>
+      <li>
+         <a href="#ofo:hasResult" title="https://w3id.org/ofo#ofo:hasResult">has result</a>
+      </li>
+      <li>
+         <a href="#hasSubProperty" title="https://w3id.org/ofo#hasSubProperty">has sub-property</a>
+      </li>
+      <li>
+         <a href="#isComplexPropertyOf" title="https://w3id.org/ofo#isComplexPropertyOf">is complex property of</a>
+      </li>
+      <li>
+         <a href="#isDataPointOf" title="https://w3id.org/ofo#isDataPointOf">is data point of</a>
+      </li>
+      <li>
+         <a href="#isExecutedBy" title="https://w3id.org/ofo#isExecutedBy">is executed by</a>
+      </li>
+      <li>
+         <a href="#isExternalDatabaseOf" title="https://w3id.org/ofo#isExternalDatabaseOf">is external database of</a>
+      </li>
+      <li>
+         <a href="#isFeatureOfInterestOf" title="https://w3id.org/ofo#isFeatureOfInterestOf">is feature of interest of</a>
+      </li>
+      <li>
+         <a href="#isFeedbackOf" title="https://w3id.org/ofo#isFeedbackOf">is feedback of</a>
+      </li>
+      <li>
+         <a href="#isFeedbackStateOf" title="https://w3id.org/ofo#isFeedbackStateOf">is feedback state of</a>
+      </li>
+      <li>
+         <a href="#isLocationOf" title="https://w3id.org/ofo#isLocationOf">is location of</a>
+      </li>
+      <li>
+         <a href="#isMonitoredBy" title="https://w3id.org/ofo#isMonitoredBy">is monitored by</a>
+      </li>
+      <li>
+         <a href="#isPartOfPropertySet" title="https://w3id.org/ofo#isPartOfPropertySet">is part of property set</a>
+      </li>
+      <li>
+         <a href="#isPropertyOf" title="https://w3id.org/ofo#isPropertyOf">is property of</a>
+      </li>
+      <li>
+         <a href="#isPropertyStateOf" title="https://w3id.org/ofo#isPropertyStateOf">is property state of</a>
+      </li>
+      <li>
+         <a href="#isResultOf" title="https://w3id.org/ofo#isResultOf">is result of</a>
+      </li>
+      <li>
+         <a href="#isSubPropertyOf" title="https://w3id.org/ofo#isSubPropertyOf">is sub-property of</a>
+      </li>
+      <li>
+         <a href="#isWornBy" title="https://w3id.org/ofo#isWornBy">is worn by</a>
+      </li>
+      <li>
+         <a href="#monitorsFeedback" title="https://w3id.org/ofo#monitorsFeedback">monitors feedback</a>
+      </li>
+      <li>
+         <a href="#wears" title="https://w3id.org/ofo#wears">wears</a>
+      </li>
+   </ul>
+   <div class="entity" id="containsProperty">
+      <h3>contains property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#containsProperty</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a property set and a property which is part of this set.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PropertySet" title="https://w3id.org/ofo#PropertySet">Property set</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPartOfPropertySet" title="https://w3id.org/ofo#isPartOfPropertySet">is part of property set</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="executesOn">
+      <h3>executes on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#executesOn</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a wearable and the property it executes on.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isExecutedBy" title="https://w3id.org/ofo#isExecutedBy">is executed by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="givesFeedback">
+      <h3>gives feedback<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#givesFeedback</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a person and the feedback given by this person.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://w3id.org/ofo#Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFeedbackOf" title="https://w3id.org/ofo#isFeedbackOf">is feedback of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#wears" title="https://w3id.org/ofo#wears">wears</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#monitorsFeedback" title="https://w3id.org/ofo#monitorsFeedback">monitors feedback</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComplexProperty">
+      <h3>has complex property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasComplexProperty</p>
+      <div class="comment">
+         <span class="markdown">Direct relationship between a feature of interest and a result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#ofo:hasResult" title="https://w3id.org/ofo#ofo:hasResult">has result</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isComplexPropertyOf" title="https://w3id.org/ofo#isComplexPropertyOf">is complex property of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDataPoint">
+      <h3>has data point<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasDataPoint</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a database and its data points.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Database" title="https://w3id.org/ofo#Database">Database</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DataPoint" title="https://w3id.org/ofo#DataPoint">Data point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isDataPointOf" title="https://w3id.org/ofo#isDataPointOf">is data point of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEvaluatedProperty">
+      <h3>has evaluated property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasEvaluatedProperty</p>
+      <div class="comment">
+         <span class="markdown">Relationship between feedback and the property it evaluates.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasFeedback" title="https://w3id.org/ofo#hasFeedback">has feedback</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasExternalDatabase">
+      <h3>has external database<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasExternalDatabase</p>
+      <div class="comment">
+         <span class="markdown">Linking a wearable with the database its results are stored in.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Database" title="https://w3id.org/ofo#Database">Database</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isExternalDatabaseOf" title="https://w3id.org/ofo#isExternalDatabaseOf">is external database of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFeatureOfInterest">
+      <h3>has feature of interest<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasFeatureOfInterest</p>
+      <div class="comment">
+         <span class="markdown">Linking feedback with its feature of interest.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFeatureOfInterestOf" title="https://w3id.org/ofo#isFeatureOfInterestOf">is feature of interest of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#hasEvaluatedProperty" title="https://w3id.org/ofo#hasEvaluatedProperty">has evaluated property</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#isPropertyOf" title="https://w3id.org/ofo#isPropertyOf">is property of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFeedback">
+      <h3>has feedback<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasFeedback</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a property and feedback evaluating this property.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasEvaluatedProperty" title="https://w3id.org/ofo#hasEvaluatedProperty">has evaluated property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFeedbackState">
+      <h3>has feedback state<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasFeedbackState</p>
+      <div class="comment">
+         <span class="markdown">Linking feedback to its result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#ofo:hasResult" title="https://w3id.org/ofo#ofo:hasResult">has result</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isFeedbackStateOf" title="https://w3id.org/ofo#isFeedbackStateOf">is feedback state of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLocation">
+      <h3>has location<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasLocation</p>
+      <div class="comment">
+         <span class="markdown">Relationship between an entity, such as a person or a wearable, and a location.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Location" title="https://w3id.org/ofo#Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isLocationOf" title="https://w3id.org/ofo#isLocationOf">is location of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#isWornBy" title="https://w3id.org/ofo#isWornBy">is worn by</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#hasLocation" title="https://w3id.org/ofo#hasLocation">has location</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dd>
+               <a href="#wears" title="https://w3id.org/ofo#wears">wears</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#hasLocation" title="https://w3id.org/ofo#hasLocation">has location</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasProperty">
+      <h3>has property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasProperty</p>
+      <div class="comment">
+         <span class="markdown">Linking a feature of interest with its property. The property is intrinsic to this feature of interest, and cannot exist without this feature of interest.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> inverse functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPropertyOf" title="https://w3id.org/ofo#isPropertyOf">is property of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPropertyState">
+      <h3>has property state<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasPropertyState</p>
+      <div class="comment">
+         <span class="markdown">Linking a property with a result.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#ofo:hasResult" title="https://w3id.org/ofo#ofo:hasResult">has result</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPropertyStateOf" title="https://w3id.org/ofo#isPropertyStateOf">is property state of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ofo:hasResult">
+      <h3>has result<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#ofo:hasResult</p>
+      <div class="comment">
+         <span class="markdown">A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasComplexProperty" title="https://w3id.org/ofo#hasComplexProperty">has complex property</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasFeedbackState" title="https://w3id.org/ofo#hasFeedbackState">has feedback state</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasPropertyState" title="https://w3id.org/ofo#hasPropertyState">has property state</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isResultOf" title="https://w3id.org/ofo#isResultOf">is result of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubProperty">
+      <h3>has sub-property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasSubProperty</p>
+      <div class="comment">
+         <span class="markdown">Describing a whole-part relationship between a property and its sub-property.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isComplexPropertyOf">
+      <h3>is complex property of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isComplexPropertyOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a result with a feature of interest.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isResultOf" title="https://w3id.org/ofo#isResultOf">is result of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasComplexProperty" title="https://w3id.org/ofo#hasComplexProperty">has complex property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDataPointOf">
+      <h3>is data point of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isDataPointOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a data point with the database it is part of.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DataPoint" title="https://w3id.org/ofo#DataPoint">Data point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Database" title="https://w3id.org/ofo#Database">Database</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasDataPoint" title="https://w3id.org/ofo#hasDataPoint">has data point</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isExecutedBy">
+      <h3>is executed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isExecutedBy</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a property and the wearable which acts on the property.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#executesOn" title="https://w3id.org/ofo#executesOn">executes on</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isExternalDatabaseOf">
+      <h3>is external database of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isExternalDatabaseOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a database with the wearable which results are stored in this database.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Database" title="https://w3id.org/ofo#Database">Database</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasExternalDatabase" title="https://w3id.org/ofo#hasExternalDatabase">has external database</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFeatureOfInterestOf">
+      <h3>is feature of interest of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isFeatureOfInterestOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a feature of interest with feedback that evaluates a property of this feature of interest.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasFeatureOfInterest" title="https://w3id.org/ofo#hasFeatureOfInterest">has feature of interest</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFeedbackOf">
+      <h3>is feedback of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isFeedbackOf</p>
+      <div class="comment">
+         <span class="markdown">Relationship between feedback and the person that gave this feedback.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Person" title="https://w3id.org/ofo#Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#givesFeedback" title="https://w3id.org/ofo#givesFeedback">gives feedback</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#isMonitoredBy" title="https://w3id.org/ofo#isMonitoredBy">is monitored by</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#isWornBy" title="https://w3id.org/ofo#isWornBy">is worn by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isFeedbackStateOf">
+      <h3>is feedback state of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isFeedbackStateOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a result with feedback.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isResultOf" title="https://w3id.org/ofo#isResultOf">is result of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasFeedbackState" title="https://w3id.org/ofo#hasFeedbackState">has feedback state</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isLocationOf">
+      <h3>is location of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isLocationOf</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a location and an entity, such as a person or a wearable.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Location" title="https://w3id.org/ofo#Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasLocation" title="https://w3id.org/ofo#hasLocation">has location</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isMonitoredBy">
+      <h3>is monitored by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isMonitoredBy</p>
+      <div class="comment">
+         <span class="markdown">Relationship between feedback and the executor (e.g. a wearable) that monitored this feedback.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#monitorsFeedback" title="https://w3id.org/ofo#monitorsFeedback">monitors feedback</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPartOfPropertySet">
+      <h3>is part of property set<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isPartOfPropertySet</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a property and the property set it is part of.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropertySet" title="https://w3id.org/ofo#PropertySet">Property set</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#containsProperty" title="https://w3id.org/ofo#containsProperty">contains property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPropertyOf">
+      <h3>is property of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isPropertyOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a property with its feature of interest. The property is intrinsic to this feature of interest, and cannot exist without a feature of interest.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasProperty" title="https://w3id.org/ofo#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPropertyStateOf">
+      <h3>is property state of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isPropertyStateOf</p>
+      <div class="comment">
+         <span class="markdown">Linking a result with a property.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#isResultOf" title="https://w3id.org/ofo#isResultOf">is result of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPropertyState" title="https://w3id.org/ofo#hasPropertyState">has property state</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isResultOf">
+      <h3>is result of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isResultOf</p>
+      <div class="comment">
+         <span class="markdown">A superproperty of multiple object properties with an ofo:Result as rdfs:Domain. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#isComplexPropertyOf" title="https://w3id.org/ofo#isComplexPropertyOf">is complex property of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isFeedbackStateOf" title="https://w3id.org/ofo#isFeedbackStateOf">is feedback state of</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#isPropertyStateOf" title="https://w3id.org/ofo#isPropertyStateOf">is property state of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#ofo:hasResult" title="https://w3id.org/ofo#ofo:hasResult">has result</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSubPropertyOf">
+      <h3>is sub-property of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isSubPropertyOf</p>
+      <div class="comment">
+         <span class="markdown">Relation between a sub-property and its parent property.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The object property describes a typical whole-part relationship between a property and its sub-properties. It is used in cases where properties are so complex that it is desirable to decompose them into separate properties. The separate properties might also be individually linked to their own results.</pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isWornBy">
+      <h3>is worn by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#isWornBy</p>
+      <div class="comment">
+         <span class="markdown">Describing the relation between a wearable and the person wearing this wearable.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Wearable" title="https://w3id.org/ofo#Wearable">Wearable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Person" title="https://w3id.org/ofo#Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wears" title="https://w3id.org/ofo#wears">wears</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="monitorsFeedback">
+      <h3>monitors feedback<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#monitorsFeedback</p>
+      <div class="comment">
+         <span class="markdown">Relationship between an executor (e.g. a wearable) and the feedback it monitors.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isMonitoredBy" title="https://w3id.org/ofo#isMonitoredBy">is monitored by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wears">
+      <h3>wears<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#wears</p>
+      <div class="comment">
+         <span class="markdown">Relationship between a wearable and the person that wears this wearable.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://w3id.org/ofo#Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Wearable" title="https://w3id.org/ofo#Wearable">Wearable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isWornBy" title="https://w3id.org/ofo#isWornBy">is worn by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasID" title="https://w3id.org/ofo#hasID">has ID</a>
+      </li>
+      <li>
+         <a href="#hasSimpleFeedbackState" title="https://w3id.org/ofo#hasSimpleFeedbackState">has simple feedback state</a>
+      </li>
+      <li>
+         <a href="#hasSimpleProperty" title="https://w3id.org/ofo#hasSimpleProperty">has simple property</a>
+      </li>
+      <li>
+         <a href="#hasSimplePropertyState" title="https://w3id.org/ofo#hasSimplePropertyState">has simple property state</a>
+      </li>
+      <li>
+         <a href="#hasSimpleResult" title="https://w3id.org/ofo#hasSimpleResult">has simple result</a>
+      </li>
+      <li>
+         <a href="#hasValue" title="https://w3id.org/ofo#hasValue">has value</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasID">
+      <h3>has ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasID</p>
+      <div class="comment">
+         <span class="markdown">The ID of a data point in an external database.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasValue" title="https://w3id.org/ofo#hasValue">has value</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DataPoint" title="https://w3id.org/ofo#DataPoint">Data point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSimpleFeedbackState">
+      <h3>has simple feedback state<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasSimpleFeedbackState</p>
+      <div class="comment">
+         <span class="markdown">Linking feedback with a simple result value described as a literal.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasSimpleResult" title="https://w3id.org/ofo#hasSimpleResult">has simple result</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Feedback" title="https://w3id.org/ofo#Feedback">Feedback</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSimpleProperty">
+      <h3>has simple property<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasSimpleProperty</p>
+      <div class="comment">
+         <span class="markdown">Linking a feature of interest with a simple property value described as a literal.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasSimpleResult" title="https://w3id.org/ofo#hasSimpleResult">has simple result</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/ofo#FeatureOfInterest">Feature of interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSimplePropertyState">
+      <h3>has simple property state<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasSimplePropertyState</p>
+      <div class="comment">
+         <span class="markdown">Linking a property with a simple property state value described as a literal.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasSimpleResult" title="https://w3id.org/ofo#hasSimpleResult">has simple result</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/ofo#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSimpleResult">
+      <h3>has simple result<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasSimpleResult</p>
+      <div class="comment">
+         <span class="markdown">A superproperty of multiple datatype properties that describe simple result values. This superproperty can be used to simultaneously query multiple ways of describing simple property values and increases the freedom of the data modeler.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasSimpleFeedbackState" title="https://w3id.org/ofo#hasSimpleFeedbackState">has simple feedback state</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSimpleProperty" title="https://w3id.org/ofo#hasSimpleProperty">has simple property</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSimplePropertyState" title="https://w3id.org/ofo#hasSimplePropertyState">has simple property state</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValue" title="https://w3id.org/ofo#hasValue">has value</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasValue">
+      <h3>has value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/ofo#hasValue</p>
+      <div class="comment">
+         <span class="markdown">The simple value of a result.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasSimpleResult" title="https://w3id.org/ofo#hasSimpleResult">has simple result</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasID" title="https://w3id.org/ofo#hasID">has ID</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Result" title="https://w3id.org/ofo#Result">Result</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://orcid.org/0000-0002-8809-3277" title="https://orcid.org/0000-0002-8809-3277">Alex Donkers</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://orcid.org/0000-0002-8809-3277">
+      <h3>Alex Donkers<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://orcid.org/0000-0002-8809-3277</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
