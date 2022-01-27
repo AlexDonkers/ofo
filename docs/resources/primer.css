@@ -75,7 +75,7 @@ div.manchester pre {
   width: 26em;
   height: 26em;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 1.0;
 
   /** From http://stackoverflow.com/questions/1080792/how-to-draw-vertical-text-with-css-cross-browser */
 
