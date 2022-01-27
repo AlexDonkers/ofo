@@ -37,6 +37,13 @@ body {
     padding: 5px;
     font-family: "Consolas"; 
   }
+
+  .download {
+    background-image: url("https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_bluedots.png");
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    color: #f2f2f2
+  }
   
   .type-c {
     cursor: help;
