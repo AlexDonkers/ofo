@@ -48,17 +48,17 @@
         <span style="font-weight:bold">SELECT</span> ?comfortProperty ?feedback ?datapoint ?database<br>
         <br>
         <span style="font-weight:bold">WHERE</span> { <br>
-            :JohnDoe ofo:givesFeedback ?feedback .
-            ?feedback ofo:hasEvaluatedProperty ?comfortProperty .
-            ?comfortProperty a ofo:Property .
-            
-            ?feedback ofo:hasResult ?datapoint .
-            ?datapoint ofo:isDataPointOf ?database .
+            :JohnDoe ofo:givesFeedback ?feedback .<br>
+            ?feedback ofo:hasEvaluatedProperty ?comfortProperty .<br>
+            ?comfortProperty a ofo:Property .<br>
+            <br>
+            ?feedback ofo:hasResult ?datapoint .<br>
+            ?datapoint ofo:isDataPointOf ?database .<br>
         }           
-    </div class="code">
+    </div>
     <br>
-    <div>
-        <span style="font-weight:bold">USE</span> ?database
+    <div class="code">
+        <span style="font-weight:bold">USE</span> ?database<br>
         <span style="font-weight:bold">SELECT</span> ?feedback <span style="font-weight:bold">FROM</span> ?datapoint <span style="font-weight:bold">ORDER BY</span> time <span style="font-weight:bold">LIMIT 1</span>
     </div>
      
