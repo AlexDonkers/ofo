@@ -1,4 +1,66 @@
 <h2 id="desc" class="list">Occupant Feedback Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+<p>
+
+    <!-- Ontology overview -->
+
+    <h4 id="ontologyoverview" class="list">Overview</h4>
+    <div id="fig1" align="center">
+        <a href="https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_ontology.png" target="_blank">
+            <img  src="https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_ontology.png" style="max-width: 100%; display: block; margin: auto">
+        </a>
+        <caption> <a href="#fig1"> Figure 1</a>: Overview of the OFO ontology </caption>
+    </div>
+
+    <!-- OPT -->
+
+    <h4 id="opt" class="list">Occupant Property Taxonomy</h4>
+
+    <p>The occupant property taxonomy (OPT:) is a small taxonomical extension of OFO. The extension is openly available at https://github.com/AlexDonkers/opt. The OPT ontology is a taxonomy of properties related to occupants and their comfort and may be extended based on new use-cases. The authors welcome anyone to suggest extensions.</p>
+
+    <div id="fig2" align="center">
+        <a href="https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_OPT.png" target="_blank">
+            <img  src="https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_OPT.png" style="max-width: 100%; display: block; margin: auto">
+        </a>
+        <caption> <a href="#fig2"> Figure 2</a>: A snippet of the Occupant Property Taxonomy </caption>
+      </div>
+
+   <!-- Practice -->
+
+   <h4 id="practice" class="list">A practical example</h4>
+
+   <div id="fig3" align="center">
+       <a href="https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_practice.png" target="_blank">
+           <img  src="https://raw.githubusercontent.com/AlexDonkers/ofo/main/docs/resources/ofo_practice.png" style="max-width: 100%; display: block; margin: auto">
+       </a>
+       <caption> <a href="#fig3"> Figure 3</a>: An instantiation of OFO </caption>
+     </div>
+
+    <!-- SPARQL -->
+
+    <h3 id="sparql" class="list">SPARQL</h3>
+
+    <h4 id="SPARQLproperties" class="list">Querying feedback given by John Doe</h4>
+
+    <div class="code">
+        <span style="font-weight:bold">PREFIX</span> bop: &lt;https://w3id.org/ofo#&gt;<br>
+        <span style="font-weight:bold">PREFIX</span> bot: &lt;https://alexdonkers.github.io/opt#&gt;<br>
+        <br>
+        <span style="font-weight:bold">SELECT</span> ?comfortProperty ?feedback ?datapoint ?database<br>
+        <br>
+        <span style="font-weight:bold">WHERE</span> { <br>
+            :JohnDoe ofo:givesFeedback ?feedback .
+            ?feedback ofo:hasEvaluatedProperty ?comfortProperty .
+            ?comfortProperty a ofo:Property .
+            
+            ?feedback ofo:hasResult ?datapoint .
+            ?datapoint ofo:isDataPointOf ?database .
+        }           
+    </div class="code">
+    <br>
+    <div>
+        <span style="font-weight:bold">USE</span> ?database
+        <span style="font-weight:bold">SELECT</span> ?feedback <span style="font-weight:bold">FROM</span> ?datapoint <span style="font-weight:bold">ORDER BY</span> time <span style="font-weight:bold">LIMIT 1</span>
+    </div>
+     
+</p>
 
