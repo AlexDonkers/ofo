@@ -10,13 +10,16 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/ofo">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/ofo#">
+        <terms:contributor>Bauke de Vries</terms:contributor>
+        <terms:contributor>Dujuan Yang</terms:contributor>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-8809-3277"/>
         <terms:description xml:lang="en">The aim of the Occupant Feedback Ontology is to semantically describe passive and active occupant feedback and to enable integration of this feedback with linked building data.</terms:description>
         <terms:title xml:lang="en">Occupant Feedback Ontology</terms:title>
         <vann:preferredNamespacePrefix>ofo</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/ofo"/>
+        <vann:preferredNamespaceUri>https://w3id.org/ofo#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">Occupant Feedback Ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
@@ -95,6 +98,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/weblog"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
     
 
 
@@ -317,6 +327,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasSubProperty">
+        <owl:inverseOf rdf:resource="https://w3id.org/ofo#isSubPropertyOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#Property"/>
         <rdfs:range rdf:resource="https://w3id.org/ofo#Property"/>
         <rdfs:comment xml:lang="en">Describing a whole-part relationship between a property and its sub-property.</rdfs:comment>
@@ -798,17 +809,11 @@ The ofo:Location class could be used to describe both geographical locations (su
 
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-8809-3277">
+        <rdfs:comment>Alex Donkers</rdfs:comment>
         <rdfs:label>Alex Donkers</rdfs:label>
         <foaf:name>Alex Donkers</foaf:name>
         <foaf:weblog>https://linktr.ee/AlexDonkers</foaf:weblog>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ofo -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ofo"/>
 </rdf:RDF>
 
 

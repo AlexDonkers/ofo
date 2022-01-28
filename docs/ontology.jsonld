@@ -54,6 +54,9 @@
 }, {
   "@id" : "https://orcid.org/0000-0002-8809-3277",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Alex Donkers"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Alex Donkers"
   } ],
@@ -64,8 +67,16 @@
     "@value" : "https://linktr.ee/AlexDonkers"
   } ]
 }, {
-  "@id" : "https://w3id.org/ofo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@id" : "https://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ofo#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Bauke de Vries"
+  }, {
+    "@value" : "Dujuan Yang"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://orcid.org/0000-0002-8809-3277"
   } ],
@@ -81,7 +92,7 @@
     "@value" : "ofo"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://w3id.org/ofo"
+    "@value" : "https://w3id.org/ofo#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -626,6 +637,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ofo#Property"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ofo#isSubPropertyOf"
   } ]
 }, {
   "@id" : "https://w3id.org/ofo#hasValue",
