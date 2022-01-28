@@ -160,14 +160,14 @@
              rdfs:label "has feedback"@en .
 
 
-###  https://w3id.org/ofo#hasFeedbackState
-:hasFeedbackState rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :hasResult ;
-                  owl:inverseOf :isFeedbackStateOf ;
-                  rdfs:domain :Feedback ;
-                  rdfs:range :Result ;
-                  rdfs:comment "Linking feedback to its result."@en ;
-                  rdfs:label "has feedback state"@en .
+###  https://w3id.org/ofo#hasFeedbackResult
+:hasFeedbackResult rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasResult ;
+                   owl:inverseOf :isFeedbackResultOf ;
+                   rdfs:domain :Feedback ;
+                   rdfs:range :Result ;
+                   rdfs:comment "Linking feedback to its result."@en ;
+                   rdfs:label "has feedback result"@en .
 
 
 ###  https://w3id.org/ofo#hasLocation
@@ -275,13 +275,13 @@
               rdfs:label "is feedback of"@en .
 
 
-###  https://w3id.org/ofo#isFeedbackStateOf
-:isFeedbackStateOf rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :isResultOf ;
-                   rdfs:domain :Result ;
-                   rdfs:range :Feedback ;
-                   rdfs:comment "Linking a result with feedback."@en ;
-                   rdfs:label "is feedback state of"@en .
+###  https://w3id.org/ofo#isFeedbackResultOf
+:isFeedbackResultOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :isResultOf ;
+                    rdfs:domain :Result ;
+                    rdfs:range :Feedback ;
+                    rdfs:comment "Linking a result with feedback."@en ;
+                    rdfs:label "is feedback result of"@en .
 
 
 ###  https://w3id.org/ofo#isLocationOf

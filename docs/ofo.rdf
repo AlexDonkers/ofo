@@ -259,16 +259,16 @@
     
 
 
-    <!-- https://w3id.org/ofo#hasFeedbackState -->
+    <!-- https://w3id.org/ofo#hasFeedbackResult -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasFeedbackState">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasFeedbackResult">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#hasResult"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/ofo#isFeedbackStateOf"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/ofo#isFeedbackResultOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#Feedback"/>
         <rdfs:range rdf:resource="https://w3id.org/ofo#Result"/>
         <rdfs:comment xml:lang="en">Linking feedback to its result.</rdfs:comment>
-        <rdfs:label xml:lang="en">has feedback state</rdfs:label>
+        <rdfs:label xml:lang="en">has feedback result</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -425,15 +425,15 @@
     
 
 
-    <!-- https://w3id.org/ofo#isFeedbackStateOf -->
+    <!-- https://w3id.org/ofo#isFeedbackResultOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ofo#isFeedbackStateOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ofo#isFeedbackResultOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#isResultOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#Result"/>
         <rdfs:range rdf:resource="https://w3id.org/ofo#Feedback"/>
         <rdfs:comment xml:lang="en">Linking a result with feedback.</rdfs:comment>
-        <rdfs:label xml:lang="en">is feedback state of</rdfs:label>
+        <rdfs:label xml:lang="en">is feedback result of</rdfs:label>
     </owl:ObjectProperty>
     
 

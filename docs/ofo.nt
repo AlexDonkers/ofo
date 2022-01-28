@@ -148,14 +148,14 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/ofo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a property and feedback evaluating this property."@en .
 <https://w3id.org/ofo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "has feedback"@en .
 # 
-# https://w3id.org/ofo#hasFeedbackState
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isFeedbackStateOf> .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking feedback to its result."@en .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#label> "has feedback state"@en .
+# https://w3id.org/ofo#hasFeedbackResult
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isFeedbackResultOf> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking feedback to its result."@en .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#label> "has feedback result"@en .
 # 
 # https://w3id.org/ofo#hasLocation
 <https://w3id.org/ofo#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -263,13 +263,13 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between feedback and the person that gave this feedback."@en .
 <https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feedback of"@en .
 # 
-# https://w3id.org/ofo#isFeedbackStateOf
-<https://w3id.org/ofo#isFeedbackStateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#isFeedbackStateOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#isResultOf> .
-<https://w3id.org/ofo#isFeedbackStateOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
-<https://w3id.org/ofo#isFeedbackStateOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
-<https://w3id.org/ofo#isFeedbackStateOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a result with feedback."@en .
-<https://w3id.org/ofo#isFeedbackStateOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feedback state of"@en .
+# https://w3id.org/ofo#isFeedbackResultOf
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#isResultOf> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a result with feedback."@en .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feedback result of"@en .
 # 
 # https://w3id.org/ofo#isLocationOf
 <https://w3id.org/ofo#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
