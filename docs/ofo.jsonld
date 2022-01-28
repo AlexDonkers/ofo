@@ -332,7 +332,7 @@
     "@id" : "https://w3id.org/ofo#Result"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ofo#ofo:hasResult"
+    "@id" : "https://w3id.org/ofo#hasResult"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ofo#isComplexPropertyOf"
@@ -459,7 +459,7 @@
     "@id" : "https://w3id.org/ofo#Result"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ofo#ofo:hasResult"
+    "@id" : "https://w3id.org/ofo#hasResult"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ofo#isFeedbackStateOf"
@@ -554,10 +554,27 @@
     "@id" : "https://w3id.org/ofo#Result"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ofo#ofo:hasResult"
+    "@id" : "https://w3id.org/ofo#hasResult"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ofo#isPropertyStateOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ofo#hasResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ofo#Result"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ofo#isResultOf"
   } ]
 }, {
   "@id" : "https://w3id.org/ofo#hasSimpleFeedbackState",
@@ -896,9 +913,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is result of"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/ofo#ofo:hasResult"
   } ]
 }, {
   "@id" : "https://w3id.org/ofo#isSubPropertyOf",
@@ -957,20 +971,6 @@
   } ],
   "https://www.schema.org/domainIncludes" : [ {
     "@id" : "https://w3id.org/ofo#Wearable"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ofo#ofo:hasResult",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has result"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ofo#Result"
   } ]
 }, {
   "@id" : "https://w3id.org/ofo#wears",

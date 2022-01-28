@@ -181,7 +181,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasComplexProperty">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#ofo:hasResult"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#hasResult"/>
         <owl:inverseOf rdf:resource="https://w3id.org/ofo#isComplexPropertyOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#FeatureOfInterest"/>
         <rdfs:range rdf:resource="https://w3id.org/ofo#Result"/>
@@ -263,7 +263,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasFeedbackState">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#ofo:hasResult"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#hasResult"/>
         <owl:inverseOf rdf:resource="https://w3id.org/ofo#isFeedbackStateOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#Feedback"/>
         <rdfs:range rdf:resource="https://w3id.org/ofo#Result"/>
@@ -313,12 +313,24 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasPropertyState">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#ofo:hasResult"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ofo#hasResult"/>
         <owl:inverseOf rdf:resource="https://w3id.org/ofo#isPropertyStateOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#Property"/>
         <rdfs:range rdf:resource="https://w3id.org/ofo#Result"/>
         <rdfs:comment xml:lang="en">Linking a property with a result.</rdfs:comment>
         <rdfs:label xml:lang="en">has property state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ofo#hasResult -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ofo#hasResult">
+        <owl:inverseOf rdf:resource="https://w3id.org/ofo#isResultOf"/>
+        <rdfs:range rdf:resource="https://w3id.org/ofo#Result"/>
+        <rdfs:comment xml:lang="en">A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler.</rdfs:comment>
+        <rdfs:label xml:lang="en">has result</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -494,7 +506,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ofo#isResultOf">
-        <owl:inverseOf rdf:resource="https://w3id.org/ofo#ofo:hasResult"/>
         <rdfs:domain rdf:resource="https://w3id.org/ofo#Result"/>
         <rdfs:comment xml:lang="en">A superproperty of multiple object properties with an ofo:Result as rdfs:Domain. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler.</rdfs:comment>
         <rdfs:label xml:lang="en">is result of</rdfs:label>
@@ -548,17 +559,6 @@
         <rdfs:range rdf:resource="https://w3id.org/ofo#Wearable"/>
         <rdfs:comment xml:lang="en">Relationship between a wearable and the person that wears this wearable.</rdfs:comment>
         <rdfs:label xml:lang="en">wears</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ofo#ofo:hasResult -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ofo#ofo:hasResult">
-        <rdfs:range rdf:resource="https://w3id.org/ofo#Result"/>
-        <rdfs:comment xml:lang="en">A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler.</rdfs:comment>
-        <rdfs:label xml:lang="en">has result</rdfs:label>
     </owl:ObjectProperty>
     
 

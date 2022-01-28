@@ -95,7 +95,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/ofo#hasComplexProperty
 <https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#ofo:hasResult> .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
 <https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isComplexPropertyOf> .
 <https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#FeatureOfInterest> .
 <https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
@@ -150,7 +150,7 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/ofo#hasFeedbackState
 <https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#ofo:hasResult> .
+<https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
 <https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isFeedbackStateOf> .
 <https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
 <https://w3id.org/ofo#hasFeedbackState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
@@ -191,12 +191,19 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/ofo#hasPropertyState
 <https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#ofo:hasResult> .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
 <https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isPropertyStateOf> .
 <https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
 <https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
 <https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a property with a result."@en .
 <https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#label> "has property state"@en .
+# 
+# https://w3id.org/ofo#hasResult
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isResultOf> .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
 # 
 # https://w3id.org/ofo#hasSubProperty
 <https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -305,7 +312,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/ofo#isResultOf
 <https://w3id.org/ofo#isResultOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#isResultOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#ofo:hasResult> .
 <https://w3id.org/ofo#isResultOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
 <https://w3id.org/ofo#isResultOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A superproperty of multiple object properties with an ofo:Result as rdfs:Domain. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en .
 <https://w3id.org/ofo#isResultOf> <http://www.w3.org/2000/01/rdf-schema#label> "is result of"@en .
@@ -339,12 +345,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Wearable> .
 <https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a wearable and the person that wears this wearable."@en .
 <https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#label> "wears"@en .
-# 
-# https://w3id.org/ofo#ofo:hasResult
-<https://w3id.org/ofo#ofo:hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ofo#ofo:hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
-<https://w3id.org/ofo#ofo:hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en .
-<https://w3id.org/ofo#ofo:hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
 # 
 # 
 # 

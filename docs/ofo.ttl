@@ -1,10 +1,10 @@
-@prefix ofo: <https://w3id.org/ofo#> .
+@prefix : <https://w3id.org/ofo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix :     <https://w3id.org/ofo#> .
+@base <https://w3id.org/ofo#> .
 
 <https://w3id.org/ofo#> rdf:type owl:Ontology ;
                          <http://purl.org/dc/terms/contributor> "Bauke de Vries" ,
@@ -105,7 +105,7 @@
 
 ###  https://w3id.org/ofo#hasComplexProperty
 :hasComplexProperty rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :ofo:hasResult ;
+                    rdfs:subPropertyOf :hasResult ;
                     owl:inverseOf :isComplexPropertyOf ;
                     rdfs:domain :FeatureOfInterest ;
                     rdfs:range :Result ;
@@ -162,7 +162,7 @@
 
 ###  https://w3id.org/ofo#hasFeedbackState
 :hasFeedbackState rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :ofo:hasResult ;
+                  rdfs:subPropertyOf :hasResult ;
                   owl:inverseOf :isFeedbackStateOf ;
                   rdfs:domain :Feedback ;
                   rdfs:range :Result ;
@@ -198,12 +198,20 @@
 
 ###  https://w3id.org/ofo#hasPropertyState
 :hasPropertyState rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :ofo:hasResult ;
+                  rdfs:subPropertyOf :hasResult ;
                   owl:inverseOf :isPropertyStateOf ;
                   rdfs:domain :Property ;
                   rdfs:range :Result ;
                   rdfs:comment "Linking a property with a result."@en ;
                   rdfs:label "has property state"@en .
+
+
+###  https://w3id.org/ofo#hasResult
+:hasResult rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isResultOf ;
+           rdfs:range :Result ;
+           rdfs:comment "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en ;
+           rdfs:label "has result"@en .
 
 
 ###  https://w3id.org/ofo#hasSubProperty
@@ -322,7 +330,6 @@
 
 ###  https://w3id.org/ofo#isResultOf
 :isResultOf rdf:type owl:ObjectProperty ;
-            owl:inverseOf :ofo:hasResult ;
             rdfs:domain :Result ;
             rdfs:comment "A superproperty of multiple object properties with an ofo:Result as rdfs:Domain. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en ;
             rdfs:label "is result of"@en .
@@ -360,13 +367,6 @@
        rdfs:range :Wearable ;
        rdfs:comment "Relationship between a wearable and the person that wears this wearable."@en ;
        rdfs:label "wears"@en .
-
-
-###  https://w3id.org/ofo#ofo:hasResult
-:ofo:hasResult rdf:type owl:ObjectProperty ;
-               rdfs:range :Result ;
-               rdfs:comment "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en ;
-               rdfs:label "has result"@en .
 
 
 #################################################################
