@@ -1,7 +1,7 @@
 This folder is a long-term stable link with resources used in a research project called Mintal.
 The folder contains resources used during this project, so that anyone could replicate our results.
 
-# html documentation
+# HTML documentation
 The ontologies used in this project are documented online
 
 Ocuppant Feedback Ontology
