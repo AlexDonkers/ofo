@@ -1,0 +1,495 @@
+<https://w3id.org/ofo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ofo#> <http://purl.org/dc/terms/contributor> "Bauke de Vries" .
+<https://w3id.org/ofo#> <http://purl.org/dc/terms/contributor> "Dujuan Yang" .
+<https://w3id.org/ofo#> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-8809-3277> .
+<https://w3id.org/ofo#> <http://purl.org/dc/terms/description> "The aim of the Occupant Feedback Ontology is to semantically describe passive and active occupant feedback and to enable integration of this feedback with linked building data."@en .
+<https://w3id.org/ofo#> <http://purl.org/dc/terms/title> "Occupant Feedback Ontology"@en .
+<https://w3id.org/ofo#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ofo" .
+<https://w3id.org/ofo#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ofo#" .
+<https://w3id.org/ofo#> <http://www.w3.org/2000/01/rdf-schema#label> "Occupant Feedback Ontology"@en .
+<https://w3id.org/ofo#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/weblog
+<http://xmlns.com/foaf/0.1/weblog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.schema.org/domainIncludes
+<https://www.schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.schema.org/rangeIncludes
+<https://www.schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ofo#containsProperty
+<https://w3id.org/ofo#containsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#containsProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isPartOfPropertySet> .
+<https://w3id.org/ofo#containsProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#PropertySet> .
+<https://w3id.org/ofo#containsProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#containsProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a property set and a property which is part of this set."@en .
+<https://w3id.org/ofo#containsProperty> <http://www.w3.org/2000/01/rdf-schema#label> "contains property"@en .
+# 
+# https://w3id.org/ofo#executesOn
+<https://w3id.org/ofo#executesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#executesOn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isExecutedBy> .
+<https://w3id.org/ofo#executesOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#executesOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a wearable and the property it executes on."@en .
+<https://w3id.org/ofo#executesOn> <http://www.w3.org/2000/01/rdf-schema#label> "executes on"@en .
+<https://w3id.org/ofo#executesOn> <https://www.schema.org/domainIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#givesFeedback
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isFeedbackOf> .
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Person> .
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#wears> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#monitorsFeedback> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a person and the feedback given by this person."@en .
+<https://w3id.org/ofo#givesFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "gives feedback"@en .
+# 
+# https://w3id.org/ofo#hasComplexProperty
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isComplexPropertyOf> .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Direct relationship between a feature of interest and a result."@en .
+<https://w3id.org/ofo#hasComplexProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has complex property"@en .
+# 
+# https://w3id.org/ofo#hasDataPoint
+<https://w3id.org/ofo#hasDataPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasDataPoint> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isDataPointOf> .
+<https://w3id.org/ofo#hasDataPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Database> .
+<https://w3id.org/ofo#hasDataPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#DataPoint> .
+<https://w3id.org/ofo#hasDataPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a database and its data points."@en .
+<https://w3id.org/ofo#hasDataPoint> <http://www.w3.org/2000/01/rdf-schema#label> "has data point"@en .
+# 
+# https://w3id.org/ofo#hasEvaluatedProperty
+<https://w3id.org/ofo#hasEvaluatedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasEvaluatedProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#hasFeedback> .
+<https://w3id.org/ofo#hasEvaluatedProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#hasEvaluatedProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasEvaluatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between feedback and the property it evaluates."@en .
+<https://w3id.org/ofo#hasEvaluatedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluated property"@en .
+# 
+# https://w3id.org/ofo#hasExternalDatabase
+<https://w3id.org/ofo#hasExternalDatabase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasExternalDatabase> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isExternalDatabaseOf> .
+<https://w3id.org/ofo#hasExternalDatabase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Database> .
+<https://w3id.org/ofo#hasExternalDatabase> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a wearable with the database its results are stored in."@en .
+<https://w3id.org/ofo#hasExternalDatabase> <http://www.w3.org/2000/01/rdf-schema#label> "has external database"@en .
+<https://w3id.org/ofo#hasExternalDatabase> <https://www.schema.org/rangeIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#hasFeatureOfInterest
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isFeatureOfInterestOf> .
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#hasEvaluatedProperty> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#isPropertyOf> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking feedback with its feature of interest."@en .
+<https://w3id.org/ofo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "has feature of interest"@en .
+# 
+# https://w3id.org/ofo#hasFeedback
+<https://w3id.org/ofo#hasFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a property and feedback evaluating this property."@en .
+<https://w3id.org/ofo#hasFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "has feedback"@en .
+# 
+# https://w3id.org/ofo#hasFeedbackResult
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isFeedbackResultOf> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking feedback to its result."@en .
+<https://w3id.org/ofo#hasFeedbackResult> <http://www.w3.org/2000/01/rdf-schema#label> "has feedback result"@en .
+# 
+# https://w3id.org/ofo#hasLocation
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isLocationOf> .
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Location> .
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#isWornBy> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#hasLocation> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#wears> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#hasLocation> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an entity, such as a person or a wearable, and a location."@en .
+<https://w3id.org/ofo#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location"@en .
+<https://w3id.org/ofo#hasLocation> <https://www.schema.org/domainIncludes> <https://w3id.org/ofo#Person> .
+<https://w3id.org/ofo#hasLocation> <https://www.schema.org/domainIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#hasProperty
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isPropertyOf> .
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a feature of interest with its property. The property is intrinsic to this feature of interest, and cannot exist without this feature of interest."@en .
+<https://w3id.org/ofo#hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property"@en .
+# 
+# https://w3id.org/ofo#hasPropertyState
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasResult> .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isPropertyStateOf> .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a property with a result."@en .
+<https://w3id.org/ofo#hasPropertyState> <http://www.w3.org/2000/01/rdf-schema#label> "has property state"@en .
+# 
+# https://w3id.org/ofo#hasResult
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isResultOf> .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A superproperty of multiple object properties with an ofo:Result as rdfs:Range. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en .
+<https://w3id.org/ofo#hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
+# 
+# https://w3id.org/ofo#hasSubProperty
+<https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#isSubPropertyOf> .
+<https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing a whole-part relationship between a property and its sub-property."@en .
+<https://w3id.org/ofo#hasSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has sub-property"@en .
+# 
+# https://w3id.org/ofo#isComplexPropertyOf
+<https://w3id.org/ofo#isComplexPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isComplexPropertyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#isResultOf> .
+<https://w3id.org/ofo#isComplexPropertyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#isComplexPropertyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#isComplexPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a result with a feature of interest."@en .
+<https://w3id.org/ofo#isComplexPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "is complex property of"@en .
+# 
+# https://w3id.org/ofo#isDataPointOf
+<https://w3id.org/ofo#isDataPointOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isDataPointOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#DataPoint> .
+<https://w3id.org/ofo#isDataPointOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Database> .
+<https://w3id.org/ofo#isDataPointOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a data point with the database it is part of."@en .
+<https://w3id.org/ofo#isDataPointOf> <http://www.w3.org/2000/01/rdf-schema#label> "is data point of"@en .
+# 
+# https://w3id.org/ofo#isExecutedBy
+<https://w3id.org/ofo#isExecutedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a property and the wearable which acts on the property."@en .
+<https://w3id.org/ofo#isExecutedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is executed by"@en .
+<https://w3id.org/ofo#isExecutedBy> <https://www.schema.org/rangeIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#isExternalDatabaseOf
+<https://w3id.org/ofo#isExternalDatabaseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isExternalDatabaseOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Database> .
+<https://w3id.org/ofo#isExternalDatabaseOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a database with the wearable which results are stored in this database."@en .
+<https://w3id.org/ofo#isExternalDatabaseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is external database of"@en .
+<https://w3id.org/ofo#isExternalDatabaseOf> <https://www.schema.org/rangeIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#isFeatureOfInterestOf
+<https://w3id.org/ofo#isFeatureOfInterestOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a feature of interest with feedback that evaluates a property of this feature of interest."@en .
+<https://w3id.org/ofo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feature of interest of"@en .
+# 
+# https://w3id.org/ofo#isFeedbackOf
+<https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Person> .
+<https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#isMonitoredBy> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ofo#isWornBy> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between feedback and the person that gave this feedback."@en .
+<https://w3id.org/ofo#isFeedbackOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feedback of"@en .
+# 
+# https://w3id.org/ofo#isFeedbackResultOf
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#isResultOf> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a result with feedback."@en .
+<https://w3id.org/ofo#isFeedbackResultOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feedback result of"@en .
+# 
+# https://w3id.org/ofo#isLocationOf
+<https://w3id.org/ofo#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Location> .
+<https://w3id.org/ofo#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a location and an entity, such as a person or a wearable."@en .
+<https://w3id.org/ofo#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is location of"@en .
+<https://w3id.org/ofo#isLocationOf> <https://www.schema.org/rangeIncludes> <https://w3id.org/ofo#Person> .
+<https://w3id.org/ofo#isLocationOf> <https://www.schema.org/rangeIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#isMonitoredBy
+<https://w3id.org/ofo#isMonitoredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isMonitoredBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#monitorsFeedback> .
+<https://w3id.org/ofo#isMonitoredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#isMonitoredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between feedback and the executor (e.g. a wearable) that monitored this feedback."@en .
+<https://w3id.org/ofo#isMonitoredBy> <http://www.w3.org/2000/01/rdf-schema#label> "is monitored by"@en .
+<https://w3id.org/ofo#isMonitoredBy> <https://www.schema.org/rangeIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#isPartOfPropertySet
+<https://w3id.org/ofo#isPartOfPropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isPartOfPropertySet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#isPartOfPropertySet> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#PropertySet> .
+<https://w3id.org/ofo#isPartOfPropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a property and the property set it is part of."@en .
+<https://w3id.org/ofo#isPartOfPropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "is part of property set"@en .
+# 
+# https://w3id.org/ofo#isPropertyOf
+<https://w3id.org/ofo#isPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/ofo#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a property with its feature of interest. The property is intrinsic to this feature of interest, and cannot exist without a feature of interest."@en .
+<https://w3id.org/ofo#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "is property of"@en .
+# 
+# https://w3id.org/ofo#isPropertyStateOf
+<https://w3id.org/ofo#isPropertyStateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isPropertyStateOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#isResultOf> .
+<https://w3id.org/ofo#isPropertyStateOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#isPropertyStateOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#isPropertyStateOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a result with a property."@en .
+<https://w3id.org/ofo#isPropertyStateOf> <http://www.w3.org/2000/01/rdf-schema#label> "is property state of"@en .
+# 
+# https://w3id.org/ofo#isResultOf
+<https://w3id.org/ofo#isResultOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isResultOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#isResultOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A superproperty of multiple object properties with an ofo:Result as rdfs:Domain. This superproperty can be used to simultaneously query multiple ways of describing property values and increases the freedom of the data modeler."@en .
+<https://w3id.org/ofo#isResultOf> <http://www.w3.org/2000/01/rdf-schema#label> "is result of"@en .
+# 
+# https://w3id.org/ofo#isSubPropertyOf
+<https://w3id.org/ofo#isSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#isSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#isSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a sub-property and its parent property."@en .
+<https://w3id.org/ofo#isSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sub-property of"@en .
+<https://w3id.org/ofo#isSubPropertyOf> <http://www.w3.org/2004/02/skos/core#example> "The object property describes a typical whole-part relationship between a property and its sub-properties. It is used in cases where properties are so complex that it is desirable to decompose them into separate properties. The separate properties might also be individually linked to their own results."@en .
+# 
+# https://w3id.org/ofo#isWornBy
+<https://w3id.org/ofo#isWornBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#isWornBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ofo#wears> .
+<https://w3id.org/ofo#isWornBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Wearable> .
+<https://w3id.org/ofo#isWornBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Person> .
+<https://w3id.org/ofo#isWornBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Describing the relation between a wearable and the person wearing this wearable."@en .
+<https://w3id.org/ofo#isWornBy> <http://www.w3.org/2000/01/rdf-schema#label> "is worn by"@en .
+# 
+# https://w3id.org/ofo#monitorsFeedback
+<https://w3id.org/ofo#monitorsFeedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#monitorsFeedback> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#monitorsFeedback> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between an executor (e.g. a wearable) and the feedback it monitors."@en .
+<https://w3id.org/ofo#monitorsFeedback> <http://www.w3.org/2000/01/rdf-schema#label> "monitors feedback"@en .
+<https://w3id.org/ofo#monitorsFeedback> <https://www.schema.org/domainIncludes> <https://w3id.org/ofo#Wearable> .
+# 
+# https://w3id.org/ofo#wears
+<https://w3id.org/ofo#wears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Person> .
+<https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ofo#Wearable> .
+<https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between a wearable and the person that wears this wearable."@en .
+<https://w3id.org/ofo#wears> <http://www.w3.org/2000/01/rdf-schema#label> "wears"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ofo#hasID
+<https://w3id.org/ofo#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ofo#hasID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasValue> .
+<https://w3id.org/ofo#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/ofo#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#DataPoint> .
+<https://w3id.org/ofo#hasID> <http://www.w3.org/2000/01/rdf-schema#comment> "The ID of a data point in an external database."@en .
+<https://w3id.org/ofo#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "has ID"@en .
+# 
+# https://w3id.org/ofo#hasSimpleFeedbackState
+<https://w3id.org/ofo#hasSimpleFeedbackState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ofo#hasSimpleFeedbackState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleResult> .
+<https://w3id.org/ofo#hasSimpleFeedbackState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Feedback> .
+<https://w3id.org/ofo#hasSimpleFeedbackState> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking feedback with a simple result value described as a literal."@en .
+<https://w3id.org/ofo#hasSimpleFeedbackState> <http://www.w3.org/2000/01/rdf-schema#label> "has simple feedback state"@en .
+# 
+# https://w3id.org/ofo#hasSimpleProperty
+<https://w3id.org/ofo#hasSimpleProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ofo#hasSimpleProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleResult> .
+<https://w3id.org/ofo#hasSimpleProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#hasSimpleProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a feature of interest with a simple property value described as a literal."@en .
+<https://w3id.org/ofo#hasSimpleProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has simple property"@en .
+# 
+# https://w3id.org/ofo#hasSimplePropertyState
+<https://w3id.org/ofo#hasSimplePropertyState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ofo#hasSimplePropertyState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleResult> .
+<https://w3id.org/ofo#hasSimplePropertyState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#hasSimplePropertyState> <http://www.w3.org/2000/01/rdf-schema#comment> "Linking a property with a simple property state value described as a literal."@en .
+<https://w3id.org/ofo#hasSimplePropertyState> <http://www.w3.org/2000/01/rdf-schema#label> "has simple property state"@en .
+# 
+# https://w3id.org/ofo#hasSimpleResult
+<https://w3id.org/ofo#hasSimpleResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ofo#hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#comment> "A superproperty of multiple datatype properties that describe simple result values. This superproperty can be used to simultaneously query multiple ways of describing simple property values and increases the freedom of the data modeler."@en .
+<https://w3id.org/ofo#hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#label> "has simple result"@en .
+# 
+# https://w3id.org/ofo#hasValue
+<https://w3id.org/ofo#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ofo#hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/ofo#hasSimpleResult> .
+<https://w3id.org/ofo#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/ofo#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The simple value of a result."@en .
+<https://w3id.org/ofo#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/ofo#DataPoint
+<https://w3id.org/ofo#DataPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#DataPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ofo#Result> .
+<https://w3id.org/ofo#DataPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A data element in a database representing the state of a property."@en .
+<https://w3id.org/ofo#DataPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Data point"@en .
+<https://w3id.org/ofo#DataPoint> <http://www.w3.org/2004/02/skos/core#example> "The data point can be used in various types of databases. It corresponds to single data records in time-series databases, or rows in SQL database tables. It is also a common concept in BMS servers, representing for example a sensor reading, output value of an actuator or any other scalar value."@en .
+# 
+# https://w3id.org/ofo#Database
+<https://w3id.org/ofo#Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Database> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data.\n\nThe database class is used to describe an external database, storing results of executions, such as a time-series database."@en .
+<https://w3id.org/ofo#Database> <http://www.w3.org/2000/01/rdf-schema#label> "Database"@en .
+# 
+# https://w3id.org/ofo#FeatureOfInterest
+<https://w3id.org/ofo#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ofo#hasProperty> .
+_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ofo#Property> .
+<https://w3id.org/ofo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstraction of a real-world phenomenon which could be described in terms of its properties."@en .
+<https://w3id.org/ofo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of interest"@en .
+<https://w3id.org/ofo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#example> "An object, part, zone, event etc.\nIn the context of the OFO ontology, an ofo:Person will usually also be an ofo:FeatureOfInterest."@en .
+# 
+# https://w3id.org/ofo#Feedback
+<https://w3id.org/ofo#Feedback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Feedback> <http://www.w3.org/2000/01/rdf-schema#comment> "An act of producing a statement of opinion on the state of a property."@en .
+<https://w3id.org/ofo#Feedback> <http://www.w3.org/2000/01/rdf-schema#label> "Feedback"@en .
+# 
+# https://w3id.org/ofo#Location
+<https://w3id.org/ofo#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "The area or space something is in.\n\nThe ofo:Location class could be used to describe both geographical locations (such as points) and topological locations (such as rooms)."@en .
+<https://w3id.org/ofo#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# https://w3id.org/ofo#Person
+<https://w3id.org/ofo#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A member of the human race."@en .
+<https://w3id.org/ofo#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://w3id.org/ofo#Property
+<https://w3id.org/ofo#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ofo#isPropertyOf> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ofo#FeatureOfInterest> .
+<https://w3id.org/ofo#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A measurable and intrinsic characteristic of a feature of interest."@en .
+<https://w3id.org/ofo#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+# 
+# https://w3id.org/ofo#PropertySet
+<https://w3id.org/ofo#PropertySet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#PropertySet> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of properties. The collection could also be a singleton or a null set."@en .
+<https://w3id.org/ofo#PropertySet> <http://www.w3.org/2000/01/rdf-schema#label> "Property set"@en .
+# 
+# https://w3id.org/ofo#Result
+<https://w3id.org/ofo#Result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Result> <http://www.w3.org/2000/01/rdf-schema#comment> "The outcome of an execution."@en .
+<https://w3id.org/ofo#Result> <http://www.w3.org/2000/01/rdf-schema#label> "Result"@en .
+<https://w3id.org/ofo#Result> <http://www.w3.org/2004/02/skos/core#example> "The result may hold, for example, a value, a unit, a result time and other provenance data."@en .
+# 
+# https://w3id.org/ofo#Smartwatch
+<https://w3id.org/ofo#Smartwatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Smartwatch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ofo#Wearable> .
+<https://w3id.org/ofo#Smartwatch> <http://www.w3.org/2000/01/rdf-schema#comment> "A wearable computer in the form of a watch. It can implement procedures to perform observations and actuations."@en .
+<https://w3id.org/ofo#Smartwatch> <http://www.w3.org/2000/01/rdf-schema#label> "Smartwatch"@en .
+# 
+# https://w3id.org/ofo#Wearable
+<https://w3id.org/ofo#Wearable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ofo#Wearable> <http://www.w3.org/2000/01/rdf-schema#comment> "A smart electronic device that is worn close to or on the surface of a person’s skin. It can implement procedures to perform observations and actuations."@en .
+<https://w3id.org/ofo#Wearable> <http://www.w3.org/2000/01/rdf-schema#label> "Wearable"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://orcid.org/0000-0002-8809-3277
+<https://orcid.org/0000-0002-8809-3277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0002-8809-3277> <http://www.w3.org/2000/01/rdf-schema#comment> "Alex Donkers" .
+<https://orcid.org/0000-0002-8809-3277> <http://www.w3.org/2000/01/rdf-schema#label> "Alex Donkers" .
+<https://orcid.org/0000-0002-8809-3277> <http://xmlns.com/foaf/0.1/name> "Alex Donkers" .
+<https://orcid.org/0000-0002-8809-3277> <http://xmlns.com/foaf/0.1/weblog> "https://linktr.ee/AlexDonkers" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

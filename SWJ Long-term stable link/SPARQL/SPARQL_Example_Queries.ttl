@@ -1,0 +1,122 @@
+####################################################################
+### Competency Question 1
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+SELECT ?comfortProperty ?feedback ?datapoint ?database
+WHERE { 
+:JohnDoe ofo:givesFeedback ?feedback .
+?feedback ofo:hasEvaluatedProperty 
+?comfortProperty .
+?comfortProperty a ofo:Property .
+    
+?feedback ofo:hasResult ?datapoint .
+?datapoint ofo:isDataPointOf ?database . } 
+
+
+####################################################################
+### Competency Question 2
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+PREFIX opt: <https://alexdonkers.github.io/opt#>
+SELECT ?personalProperty ?datapoint ?database
+WHERE { 
+:JohnsFitbit ofo:executesOn ?personalProperty .
+?personalProperty a opt:PersonalProperty .
+?personalProperty ofo:hasResult ?datapoint .
+?datapoint ofo:isDataPointOf ?database . } 
+
+
+####################################################################
+### Competency Question 3
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+SELECT ?feedback ?foi
+WHERE { 
+:JohnDoe ofo:givesFeedback ?feedback .
+?feedback ofo:hasFeatureOfInterest ?foi . } 
+
+
+PREFIX ofo: <https://w3id.org/ofo#>
+SELECT ?location ?datapoint ?database
+WHERE { 
+:JohnDoe ofo:hasLocation ?location .
+?location ofo:hasDataPoint ?datapoint .
+?datapoint ofo:isDataPointOf ?database . } 
+
+
+####################################################################
+### Competency Question 4
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+PREFIX bot: <https://w3id.org/bot#>
+SELECT ?person ?feedback ?foi
+WHERE { 
+?person ofo:givesFeedback ?feedback .
+?feedback ofo:hasFeatureOfInterest ?foi .
+:Kitchen bot:hasElement ?foi . } 
+
+
+####################################################################
+### Competency Question 5
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?feedback ?resultTime
+WHERE { 
+?feedback ofo:hasResult ?result .
+?result prov:generatedAtTimev ?resultTime .
+BIND(xsd:dateTime(NOW()) AS ?now) .
+FILTER (YEAR(xsd:dateTime(?resultTime)) > (YEAR(?now) - 3)) } 
+
+
+####################################################################
+### Competency Question 6
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+SELECT ?property
+WHERE {
+:ThermalComfortPropertySet ofo:containsProperty ?property .
+{ ?property ofo:isPropertyOf :Room1 . }
+UNION
+{ ?property ofo:hasFeedback ?feedback .
+?feedback ofo:isFeedbackOf ?person .
+?person ofo:hasLocation :Room1 . } . }
+
+
+PREFIX ofo: <https://w3id.org/ofo#>
+SELECT ?property ?location ?propertyDataPoint ?locationDataPoint .
+WHERE {
+:ThermalComfortPropertySet ofo:containsProperty ?property .
+{ ?property ofo:isPropertyOf :Room1 . }
+UNION
+{ ?property ofo:hasFeedback ?feedback .
+?feedback ofo:isFeedbackOf :JohnDoe . } .
+?property ofo:hasResult ?propertyDataPoint .
+?feedback ofo:hasResult ?feedbackDataPoint . }
+
+
+####################################################################
+### Competency Question 7
+####################################################################
+
+PREFIX ofo: <https://w3id.org/ofo#>
+SELECT ?property ?datapoint ?database
+WHERE { 
+:ThermalComfortPropertySet ofo:containsProperty ?property .
+{ ?property ofo:isPropertyOf :Room1 . }
+UNION
+{ ?property ofo:hasFeedback ?feedback .
+?feedback ofo:isFeedbackOf :JohnDoe . } 
+UNION
+{ ?property ofo:isPropertyOf :JohnDoe .
+?property ofo:isExecutedBy ?wearable .
+?wearable a ofo:Wearable . }.
+?property ofo:hasResult ?propertyDataPoint . } 
+
