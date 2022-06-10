@@ -23,7 +23,7 @@ The research is presented in the following paper [unpublished]:
 | Date	      | Editor       | Description                |
 | ----------- | ------------ | -------------------------- |
 | 02-02-2022  | Alex Donkers | Creating this folder       |
-
+| 10-06-2022  | Alex Donkers | Updating resources for the revision of the paper      |
 
 # Contact information
 Alex Donkers, Eindhoven University of Technology, [a.j.a.donkers@tue.nl](mailto:a.j.a.donkers@tue.nl)
