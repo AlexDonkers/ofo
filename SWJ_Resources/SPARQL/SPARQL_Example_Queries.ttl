@@ -80,26 +80,23 @@ FILTER (YEAR(xsd:dateTime(?resultTime)) > (YEAR(?now) - 3)) }
 ####################################################################
 
 PREFIX ofo: <https://w3id.org/ofo#>
-SELECT ?property
+SELECT ?database ?feedback ?dataPoint
 WHERE {
 :ThermalComfortPropertySet ofo:containsProperty ?property .
-{ ?property ofo:isPropertyOf :Room1 . }
-UNION
-{ ?property ofo:hasFeedback ?feedback .
+?property ofo:hasFeedback ?feedback .
 ?feedback ofo:isFeedbackOf ?person .
-?person ofo:hasLocation :Room1 . } . }
-
+?person ofo:hasLocation :Room1 . 
+?feedback ofo:hasResult ?dataPoint . }
 
 PREFIX ofo: <https://w3id.org/ofo#>
-SELECT ?property ?location ?propertyDataPoint ?locationDataPoint .
+SELECT ?database ?feedback ?dataPoint .
 WHERE {
-:ThermalComfortPropertySet ofo:containsProperty ?property .
-{ ?property ofo:isPropertyOf :Room1 . }
-UNION
-{ ?property ofo:hasFeedback ?feedback .
-?feedback ofo:isFeedbackOf :JohnDoe . } .
-?property ofo:hasResult ?propertyDataPoint .
-?feedback ofo:hasResult ?feedbackDataPoint . }
+:ThermalComfortPropertySet ofo:containsProperty 
+?property .
+?property ofo:hasFeedback / ofo:isFeedbackOf 
+:JohnDoe . 
+?feedback ofo:hasResult ?dataPoint . }
+
 
 
 ####################################################################
@@ -107,16 +104,14 @@ UNION
 ####################################################################
 
 PREFIX ofo: <https://w3id.org/ofo#>
-SELECT ?property ?datapoint ?database
+SELECT ?property ?dataPoint ?database
 WHERE { 
-:ThermalComfortPropertySet ofo:containsProperty ?property .
-{ ?property ofo:isPropertyOf :Room1 . }
+:ThermalComfortPropertySet ofo:containsProperty
+?property .
+{ ?property ofo:isPropertyOf :JohnDoe . } 
 UNION
-{ ?property ofo:hasFeedback ?feedback .
-?feedback ofo:isFeedbackOf :JohnDoe . } 
-UNION
-{ ?property ofo:isPropertyOf :JohnDoe .
-?property ofo:isExecutedBy ?wearable .
-?wearable a ofo:Wearable . }.
-?property ofo:hasResult ?propertyDataPoint . } 
+{ ?property ofo:hasFeedback / ofo:isFeedbackOf
+:JohnDoe . }
+?property ofo:hasResult ?dataPoint . } 
+
 

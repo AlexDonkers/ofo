@@ -1,0 +1,85 @@
+#################################################################
+# Ontology for Property Management (OPM)
+# &
+# Occupant Feedback Ontology (OFO)
+# Alignment module
+#################################################################
+
+# Alex Donkers
+# a.j.a.donkers@tue.nl
+# 2022
+
+#################################################################
+# Prefixes
+#################################################################
+
+@prefix : <https://w3id.org/ofo/AlignmentOFO-OPM#> .
+@prefix ofo: <https://w3id.org/ofo#> .
+@prefix opm: <http://www.w3id.org/opm#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .  
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <https://schema.org/> .
+
+
+
+#################################################################
+# Alignment module metadata
+#################################################################
+
+<https://w3id.org/ofo/AlignmentOFO-OPM> rdf:type owl:Ontology , voaf:Vocabulary ;
+	dcterms:title "Alignment module OFO - OPM"@en ;
+	dcterms:description """This alignment module defines the correspondences between OFO v1.0 and OPM """@en ;
+	dcterms:issued "2022-06-10"^^xsd:date ;
+	dcterms:modified "2022-06-10"^^xsd:date ;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+    owl:versionInfo "v1.0" ;
+    owl:versionIRI <https://w3id.org/bot/AlignmentOFO-FOAF> ;
+		dcterms:creator <https://orcid.org/0000-0002-8809-3277> ;
+	owl:imports 	<https://w3id.org/ofo> ,
+					<http://www.w3id.org/opm> .
+
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:contributor a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+schema:name a owl:AnnotationProperty .
+
+<https://orcid.org/0000-0002-8809-3277> a vcard:Individual , schema:Person; 
+	vcard:fn    "Alex Donkers" ;
+	schema:name "Alex Donkers" .
+	
+	
+
+###############################################################################################
+# Classes
+###############################################################################################
+
+ofo:Result rdfs:subClassOf opm:PropertyState .
+# They design of ofo:Result was based on opm and these classes are the same.
+# While the definition of ofo:Result states that it can be an outcome of an execution, the ontology is intended to be used for a limited domain.
+# opm on it's turn seems domain independent and thus covers a wider range of possible property states.
+# This is why we used rdfs:subClassOf. In practice, users could use ofo:Result the same way as opm:PropertyState is used. 
+
+
+
+###############################################################################################
+# Object properties
+###############################################################################################
+
+ofo:hasPropertyState rdfs:subPropertyOf opm:hasPropertyState .
+# same argumentation as for ofo:Result rdfs:subClassOf opm:PropertyState 
+
+

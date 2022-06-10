@@ -1,0 +1,101 @@
+#################################################################
+# Semantic Sensor Network Ontology (SOSA/SSN)
+# &
+# Occupant Feedback Ontology (OFO)
+# Alignment module
+#################################################################
+
+# Alex Donkers
+# a.j.a.donkers@tue.nl
+# 2022
+
+#################################################################
+# Prefixes
+#################################################################
+
+@prefix : <https://w3id.org/ofo/AlignmentOFO-SSN-SOSA#> .
+@prefix ofo: <https://w3id.org/ofo#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .  
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <https://schema.org/> .
+
+
+
+#################################################################
+# Alignment module metadata
+#################################################################
+
+<https://w3id.org/ofo/AlignmentOFO-SSN-SOSA> rdf:type owl:Ontology , voaf:Vocabulary ;
+	dcterms:title "Alignment module OFO - SSN"@en ;
+	dcterms:description """This alignment module defines the correspondences between OFO v1.0 and SSN + SOSA 20171019 """@en ;
+	dcterms:issued "2022-06-10"^^xsd:date ;
+	dcterms:modified "2022-06-10"^^xsd:date ;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+    owl:versionInfo "v1.0" ;
+    owl:versionIRI <https://w3id.org/bot/AlignmentOFO-SSN> ;
+		dcterms:creator <https://orcid.org/0000-0002-8809-3277> ;
+	owl:imports 	<https://w3id.org/ofo> ,
+					<https://www.w3.org/TR/2017/REC-vocab-ssn-20171019> .
+
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:contributor a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+schema:name a owl:AnnotationProperty .
+
+<https://orcid.org/0000-0002-8809-3277> a vcard:Individual , schema:Person; 
+	vcard:fn    "Alex Donkers" ;
+	schema:name "Alex Donkers" .
+	
+	
+
+###############################################################################################
+# Classes
+###############################################################################################
+
+ofo:Wearable rdfs:subClassOf ssn:System .
+# A wearable is a specific type of System
+
+ofo:Property rdfs:subClassOf ssn:Property . 
+# There may be equivalence in this case. However, ofo uses a functional property between an ofo:FeatureOfInterest and an ofo:Property, while this object property is not functional in ssn. 
+# It is for this reason that the ofo:Property is deemed to be more specific than the ssn:Property. Therefore, a subclass relationship is used. 
+
+ofo:FeatureOfInterest rdfs:subClassOf ssn:FeatureOfInterest .
+# There may be equivalence in this case. However, ofo uses a functional property between an ofo:FeatureOfInterest and an ofo:Property, while this object property is not functional in ssn. 
+# It is for this reason that the ofo:FeatureOfInterest is deemed to be more specific than the ssn:FeatureOfInterest. Therefore, a subclass relationship is used. 
+
+sosa:Result rdfs:subClassOf ofo:Result .
+# sosa:Result is a result of an observation, actuation or act of sampling, while ofo:Result is more general and is defined as the outcome of an execution.
+# Therefore, sosa:Result is more specific and thus a subclass of ofo:Result.
+
+###############################################################################################
+# Object properties
+###############################################################################################
+
+
+ofo:wears rdfs:subPropertyOf ssn:hosts .
+ofo:isWornBy rdfs:subPropertyOf ssn:isHostedBy .
+# ssn:hosts describes the relationship between a Platform and a System. 
+# A human wearing a smartwatch falls within the definition of an ssn:Platform.
+# An ofo:Person is not a subclass of an ssn:Platform, since an ofo:Person does not always wear devices.
+# The rdfs:subPropertyOf relationship is used as the ofo properties are more specific than the ssn properties.
+
+ofo:hasFeatureOfInterest rdfs:subPropertyOf sosa:hasFeatureOfInterest .
+ofo:isFeatureOfInterestOf rdfs:subPropertyOf sosa:isFeatureOfInterestOf .
+# ofo:FeatureOfInterest can be a subclass of sosa:FeatureOfInterest because sosa:FeatureOfInterest only uses a 'domain includes' clause. 
+

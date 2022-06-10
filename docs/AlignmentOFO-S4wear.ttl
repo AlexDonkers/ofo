@@ -1,0 +1,101 @@
+#################################################################
+# SAREF4WEAR
+# &
+# Occupant Feedback Ontology (OFO)
+# Alignment module
+#################################################################
+
+# Alex Donkers
+# a.j.a.donkers@tue.nl
+# 2022
+
+#################################################################
+# Prefixes
+#################################################################
+
+@prefix : <https://w3id.org/ofo/AlignmentOFO-SSN-SOSA#> .
+@prefix ofo: <https://w3id.org/ofo#> .
+@prefix s4wear: <https://w3id.org/ofo/AlignmentOFO-S4Wear#> .
+@prefix saref: <https://saref.etsi.org/core/> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .  
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <https://schema.org/> .
+
+
+
+#################################################################
+# Alignment module metadata
+#################################################################
+
+<https://w3id.org/ofo/AlignmentOFO-S4Wear> rdf:type owl:Ontology , voaf:Vocabulary ;
+	dcterms:title "Alignment module OFO - S4wear"@en ;
+	dcterms:description """This alignment module defines the correspondences between OFO v1.0 and S4Wear v1.1.1 """@en ;
+	dcterms:issued "2022-06-10"^^xsd:date ;
+	dcterms:modified "2022-06-10"^^xsd:date ;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+    owl:versionInfo "v1.0" ;
+    owl:versionIRI <https://w3id.org/bot/AlignmentOFO-S4Wear> ;
+		dcterms:creator <https://orcid.org/0000-0002-8809-3277> ;
+	owl:imports 	<https://w3id.org/ofo> ,
+					<https://saref.etsi.org/saref4wear> ,
+					<https://saref.etsi.org/core/> .
+
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:contributor a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+schema:name a owl:AnnotationProperty .
+
+<https://orcid.org/0000-0002-8809-3277> a vcard:Individual , schema:Person; 
+	vcard:fn    "Alex Donkers" ;
+	schema:name "Alex Donkers" .
+	
+
+
+###############################################################################################
+# Classes
+###############################################################################################
+
+ofo:Wearable rdfs:subClassOf s4wear:Wearable .
+# ofo:Wearable is not supposed to describe in-body devices, while these do fit in the definition of s4wear:Wearable.
+# Therefore, the rdfs:subClassOf relation is used.
+
+ofo:Property rdfs:subClassOf saref:Property . 
+# There may be equivalence in this case. However, ofo uses a functional property between an ofo:FeatureOfInterest and an ofo:Property, while this object property is not functional in saref. 
+# It is for this reason that the ofo:Property is deemed to be more specific than the saref:Property. Therefore, a subclass relationship is used. 
+
+ofo:FeatureOfInterest rdfs:subClassOf saref:FeatureOfInterest .
+# There may be equivalence in this case. However, ofo uses a functional property between an ofo:FeatureOfInterest and an ofo:Property, while this object property is not functional in saref. 
+# It is for this reason that the ofo:FeatureOfInterest is deemed to be more specific than the saref:FeatureOfInterest. Therefore, a subclass relationship is used. 
+
+ofo:Person rdfs:subClassOf s4wear:Wearer .
+# s4wear describes the s4wear:Wearer as any living organism that is sensed by a wearable. The ofo:Person class is more specific, only focussing on humans, which is why the subClassOf relation is used.
+
+saref:Measurement rdfs:subClassOf ofo:Result .
+# saref:Measurement represents the measured value over a property, while ofo:Result represents any outcome of an execution (over a property). 
+
+
+
+###############################################################################################
+# Object properties
+###############################################################################################
+
+ofo:isWornBy rdfs:subPropertyOf s4wear:isLocated .
+# We do consider the ofo:isWornBy an rdf:subPropertyOf s4wear:isLocated, because s4wear:isLocated has a broader range (as it can also describe in-body locations).
+
+ofo:givesFeedback rdfs:subClassOf s4wear:interactsWith .
+# Giving feedback is a type of interaction between a user and a device.
+

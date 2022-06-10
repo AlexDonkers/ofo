@@ -1,0 +1,112 @@
+#################################################################
+# Building Performance Ontology (BOP)
+# &
+# Occupant Feedback Ontology (OFO)
+# Alignment module
+#################################################################
+
+# Alex Donkers
+# a.j.a.donkers@tue.nl
+# 2022
+
+#################################################################
+# Prefixes
+#################################################################
+
+@prefix : <https://w3id.org/ofo/AlignmentOFO-BOP#> .
+@prefix ofo: <https://w3id.org/ofo#> .
+@prefix bop: <https://w3id.org/bop#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .  
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <https://schema.org/> .
+
+
+
+#################################################################
+# Alignment module metadata
+#################################################################
+
+<https://w3id.org/ofo/AlignmentOFO-BOP> rdf:type owl:Ontology , voaf:Vocabulary ;
+	dcterms:title "Alignment module OFO - BOP"@en ;
+	dcterms:description """This alignment module defines the correspondences between OFO v1.0 and BOP v2.0 """@en ;
+	dcterms:issued "2022-05-17"^^xsd:date ;
+	dcterms:modified "2022-05-17"^^xsd:date ;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
+    owl:versionInfo "v1.0" ;
+    owl:versionIRI <https://w3id.org/bot/AlignmentOFO-BOP> ;
+		dcterms:creator <https://orcid.org/0000-0002-8809-3277> ;
+	owl:imports 	<https://w3id.org/ofo> ,
+					<https://w3id.org/bop> .
+
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:issued a owl:AnnotationProperty .
+dcterms:modified a owl:AnnotationProperty .
+dcterms:creator a owl:AnnotationProperty .
+dcterms:contributor a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+vcard:fn a owl:AnnotationProperty .
+schema:name a owl:AnnotationProperty .
+
+<https://orcid.org/0000-0002-8809-3277> a vcard:Individual , schema:Person; 
+	vcard:fn    "Alex Donkers" ;
+	schema:name "Alex Donkers" .
+
+
+
+#################################################################
+# Classes
+#################################################################
+
+ofo:DataPoint rdfs:subClassOf bop:DataPoint .
+ofo:Database rdfs:subClassOf bop:Database .
+ofo:FeatureOfInterest rdfs:subClassOf bop:FeatureOfInterest .
+ofo:Feedback rdfs:subClassOf bop:Execution .
+ofo:Property rdfs:subClassOf bop:Property .
+ofo:PropertySet rdfs:subClassOf bop:PropertySet .
+ofo:Result rdfs:subClassOf bop:Result .
+ofo:Wearable rdfs:subClassOf bop:Executor .
+
+
+
+#################################################################
+# Object Properties
+#################################################################
+
+ofo:containsProperty rdfs:subPropertyOf bop:containsProperty .
+ofo:executesOn rdfs:subPropertyOf bop:executesOn .
+ofo:hasComplexProperty rdfs:subPropertyOf bop:hasComplexProperty .
+ofo:hasDataPoint rdfs:subPropertyOf bop:hasDataPoint .
+ofo:hasEvaluatedProperty rdfs:subPropertyOf bop:hasExecutedProperty .
+ofo:hasExternalDataBase  rdfs:subPropertyOf bop:hasExternalDataBase .
+ofo:hasFeatureOfInterest rdfs:subPropertyOf bop:hasFeatureOfInterest .
+ofo:hasFeedback rdfs:subPropertyOf bop:hasExecution .
+ofo:hasFeedbackState rdfs:subPropertyOf bop:hasExecutionState .
+ofo:hasProperty rdfs:subPropertyOf bop:hasProperty .
+ofo:hasPropertyState rdfs:subPropertyOf bop:hasPropertyState .
+ofo:hasResult rdfs:subPropertyOf bop:hasResult .
+ofo:hasSubProperty rdfs:subPropertyOf bop:hasSubProperty .
+ofo:isComplexPropertyOf rdfs:subPropertyOf bop:isComplexPropertyOf .
+ofo:isDataPointOf rdfs:subPropertyOf bop:isDataPointOf .
+ofo:isExecutedBy rdfs:subPropertyOf bop:isExecutedBy .
+ofo:isExternalDatabaseOf rdfs:subPropertyOf bop:isExternalDatabaseOf .
+ofo:isFeatureOfInterestOf rdfs:subPropertyOf bop:isFeatureOfInterestOf .
+ofo:isFeedbackStateOf rdfs:subPropertyOf bop:isExecutionStateOf .
+ofo:isMonitoredBy rdfs:subPropertyOf bop:executedBy .
+ofo:isPartOfPropertySet rdfs:subPropertyOf bop:isPartOfPropertySet .
+ofo:isPropertyOf rdfs:subPropertyOf bop:isPropertyOf .
+ofo:isPropertyStateOf rdfs:subPropertyOf bop:isPropertyStateOf .
+ofo:isResultOf rdfs:subPropertyOf bop:isResultOf .
+ofo:isSubPropertyOf rdfs:subPropertyOf bop:isSubPropertyOf .
+ofo:isWornBy rdfs:subPropertyOf bop:isHostedBy .
+ofo:monitorsFeedback rdfs:subPropertyOf bop:performsExecution .
+ofo:wears rdfs:subPropertyOf bop:hosts .
