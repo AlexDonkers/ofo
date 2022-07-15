@@ -954,5 +954,7 @@ OF:LivingRoomAirQuality
 ################################################################################################################################################################################################################################
 
 OF:OpenFlatDB
-		a							bop:Database ;
-		bop:hasDataPoint			OF:LivingRoomTemperatureDataPoint , OF:LivingRoomRelativeHumidityDataPoint , OF:LivingRoomAirQualityDataPoint .	
+		a							bop:Database , bopdb:InfluxDB ;
+		bop:hasDataPoint			OF:LivingRoomTemperatureDataPoint , OF:LivingRoomRelativeHumidityDataPoint , OF:LivingRoomAirQualityDataPoint ;
+		bopdb:hasOrganization		"a.j.a.donkers@tue.nl" ;
+		bopdb:hasBaseURL			"https://westeurope-1.azure.cloud2.influxdata.com/" .
