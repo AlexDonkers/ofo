@@ -36,7 +36,7 @@
 
 <https://w3id.org/ofo/AlignmentOFO-SSN-SOSA> rdf:type owl:Ontology , voaf:Vocabulary ;
 	dcterms:title "Alignment module OFO - SSN"@en ;
-	dcterms:description """This alignment module defines the correspondences between OFO v1.0 and SSN + SOSA 20171019 """@en ;
+	dcterms:description """This alignment module defines the correspondences between OFO v1.0 and SSN + SOSA """@en ;
 	dcterms:issued "2022-06-10"^^xsd:date ;
 	dcterms:modified "2022-06-10"^^xsd:date ;
 	dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
@@ -44,7 +44,7 @@
     owl:versionIRI <https://w3id.org/bot/AlignmentOFO-SSN> ;
 		dcterms:creator <https://orcid.org/0000-0002-8809-3277> ;
 	owl:imports 	<https://w3id.org/ofo> ,
-					<https://www.w3.org/TR/2017/REC-vocab-ssn-20171019> .
+					<https://www.w3.org/ns/ssn/> .
 
 dcterms:title a owl:AnnotationProperty .
 dcterms:description a owl:AnnotationProperty .
